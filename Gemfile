@@ -63,4 +63,20 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.6'
+  gem "capistrano"
+  gem "capistrano-rbenv"
+  gem "capistrano-bundler"
+  gem "capistrano-rails"
+  gem "capistrano3-unicorn"
 end
+
+group :production do
+  gem "unicorn", "5.4.1"
+end
+
+gem "haml-rails"
+gem "erb2haml"
+gem "font-awesome-rails"
+gem "devise"
+gem "jquery-rails"
+gem "jquery-turbolinks"
