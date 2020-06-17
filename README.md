@@ -1,24 +1,54 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- ECサイトです。着物をお預かり、リメイクのやりとりをサイト上で完結できます。
+- 背景としてクライアントはホームページを所有しておらず、元々はアナログで実施しており地元の評判が良かったので、全国対応するために作成を考案しました。
 
-Things you may want to cover:
+## アプリケーション概要
 
-* Ruby version
+- 「Rikimo」のECサイト
 
-* System dependencies
+## アプリケーションの機能一覧
 
-* Configuration
+- レスポンシブ対応
+- お問い合わせ機能／よくある質問
+- ユーザーログイン／ログアウト機能
+- reCAPTCHA機能
+- 管理者ログイン／管理者ログアウト機能
+- ユーザー情報編集機能
+- マイページ表示機能
+- 出品中／売り切れ商品表示機能
+- 購入側過去の取引表示機能
+- クレジットカード登録／削除機能
+- 商品購入機能／取り消し機能
 
-* Database creation
+- 取引中コメント機能
+- 着物受け取り通知（自分から見て）機能
 
-* Database initialization
+- 領収書機能（できればPDF表示）
+- 自社の商品出品／編集／削除機能
+- ブログ機能又はインスタグラムAPI取得
+- パンくず表示機能
 
-* How to run the test suite
+- Docker
+- Circle CI
 
-* Services (job queues, cache servers, search engines, etc.)
+## アプリケーション内で使用している技術一覧
+|種別|名称|
+|------|----|
+|開発言語|Ruby(ver 2.5.8)|
+|フレームワーク|Ruby on Rails(ver 5.2.2)|
+|マークアップ|HTML(Haml),CSS(Sass)|
+|フロントエンド|JavaScript(jQuery)|
+|DB|MySQL|
+|本番環境|AWS|
+|自動デプロイ|capistrano|
+|パンくず表示機能|gretel|
+|お問い合わせ機能|rails-i18n|
 
-* Deployment instructions
+## データベース
 
-* ...
+- 未完成
+
+## Webページ
+
+- 未完成
