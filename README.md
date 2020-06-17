@@ -29,9 +29,6 @@
 - ブログ機能又はインスタグラムAPI取得
 - パンくず表示機能
 
-- Docker
-- Circle CI
-
 ## アプリケーション内で使用している技術一覧
 |種別|名称|
 |------|----|
@@ -40,8 +37,10 @@
 |マークアップ|HTML(Haml),CSS(Sass)|
 |フロントエンド|JavaScript(jQuery)|
 |DB|MySQL|
+|開発環境|Docker|
 |本番環境|AWS|
 |自動デプロイ|capistrano|
+|自動テスト|Circle CI|
 |パンくず表示機能|gretel|
 |お問い合わせ機能|rails-i18n|
 
