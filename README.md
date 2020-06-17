@@ -33,7 +33,7 @@
 |種別|名称|
 |------|----|
 |開発言語|Ruby(ver 2.5.8)|
-|フレームワーク|Ruby on Rails(ver 5.2.2)|
+|フレームワーク|Ruby on Rails(ver 5.2.4.3)|
 |マークアップ|HTML(Haml),CSS(Sass)|
 |フロントエンド|JavaScript(jQuery)|
 |DB|MySQL|
