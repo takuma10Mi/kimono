@@ -1,0 +1,15 @@
+!!!
+%html
+  %head
+    = analytics_init if Rails.env.production?
+    = display_meta_tags(default_meta_tags)
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:content => "width=device-width", :name => "viewport"}/
+    = csrf_meta_tags
+    = csp_meta_tag
+    %script{ charset: 'UTF-8', src: 'https://ajaxzip3.github.io/ajaxzip3.js'}
+    %link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700")/
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  %body
+    = yield
