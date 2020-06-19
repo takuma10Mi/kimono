@@ -1,0 +1,7 @@
+// 共通で使用するscss
+@import "./partial/reset";  /* _reset.scssを読み込む */
+@import "./partial/color_variable";  /* _color_variable.scssを読み込む 共通フォント*/
+@import "font-awesome";
+
+// homeで使用するscss
+@import "./homes/homes";
