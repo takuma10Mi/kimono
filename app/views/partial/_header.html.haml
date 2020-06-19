@@ -1,1 +1,51 @@
 .header
+  .header__left
+    = link_to root_path, class: 'header__left__logo' do
+      = image_tag 'logo2.png', alt: 'ロゴ', size: '55x55', class: 'logo'
+      -# = image_tag 'logo_text.png', alt: 'ロゴ', size: '100x60', class: 'logo_text'
+  .header__right
+    .header__right__gide
+      %p 着物リメイク〜和風でお洒落に〜
+      %span 【ご来店受付時間】9:00~17:00
+    %ul.header__right__list
+      %li
+        トップページ
+      %li
+        料金一覧
+      %li
+        商品一覧
+      %li
+        既製品一覧
+      %li
+        お問い合わせ
+      = link_to "新規会員登録", "", class: "create-user-button"
+      = link_to "ログイン", "", class: "login-button"
+
+.navi
+  %ul
+    %li
+      トップページ
+    %li
+      料金一覧
+    %li
+      商品一覧
+    %li
+      既製品一覧
+    %li
+      お問い合わせ
+    %li
+      新規会員登録
+    %li
+      ログイン
+
+.header-responsive
+  .header-responsive__left
+    .logo
+      = image_tag 'logo.png', alt: 'ロゴ', height: '30', width: '30', class: "mark"
+      -# = image_tag 'logo_text.png', alt: 'ロゴ', height: '38', width: '72', class: "text"
+
+  .header-responsive__right
+    .toggle
+      %span
+      %span
+      %span

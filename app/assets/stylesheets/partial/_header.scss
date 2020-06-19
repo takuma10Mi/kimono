@@ -1,0 +1,204 @@
+.header{
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid $midlle-purple;
+  &__left{
+    margin-top: 1rem;
+    &__logo{
+      .logo{
+        margin: 0 1rem 1.2rem 0;
+      }
+    }
+  }
+  &__right{
+
+    &__gide{
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 3rem;
+      font-weight: bold;
+
+      p{
+        color: $dark-purple;
+        margin: 0 0 0 0.5rem;
+        font-size: 1.8rem;
+        line-height: 3rem;
+      }
+      span{
+        line-height: 3.3rem;
+      }
+    }
+    &__list{
+      display: flex;
+      position: relative;
+      li, .create-user-button , .login-button {
+        position: relative;
+        margin-right: 2.5rem;
+        font-size: 1rem;
+        font-weight: 600;
+        font-family: "-apple-system", 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+        a::after{
+          position: absolute;
+          content: '';
+          bottom: -0.5rem;
+          left: 0;
+          width: 0;
+          height: 2px;
+          background: $midlle-purple;
+          transition: all 0.3s ease 0s;
+        }
+        a:hover::after{
+          width: 100%;
+        }
+      }
+      .create-user-button{
+        top: -0.5rem;
+        padding: 0.5rem;
+        color: #fff;
+        border-radius: 0.6rem;
+        background-color: $dark-purple;
+        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+        transition: all 0.3s ease 0s;
+        margin-right: 20px;
+      }
+      .login-button{
+        top: -0.5rem;
+        padding: 0.5rem;
+        color: #fff;
+        border-radius: 0.6rem;
+        background-color: $dark-purple;
+        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+        transition: all 0.3s ease 0s;
+      }
+      .create-user-button:hover , .login-button:hover{
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+        transform: translateY(-0.1875em);
+        opacity: .8;
+      }
+    }
+  }
+}
+
+/*レスポンシブデザイン*/
+.navi{
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #fffadc;
+  text-align: center;
+  width: 100%;
+  transform: translateY(-100%);
+  transition: all 0.6s;
+  ul{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    li{
+      font-size: 1.1em;
+      font-weight: bold;
+      list-style-type: none;
+      padding: 0;
+      width: 100%;
+      border-bottom: 1px dotted $dark-purple;
+      a{
+        display: block;
+        padding: 1em 0;
+      }
+      a:hover{
+        opacity: .7;
+      }
+    }
+    li:last-child{
+      padding-bottom: 0;
+    }
+  }
+}
+.active{
+  transform: translateY(0%);
+}
+
+.header-responsive{
+  display: none;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  height: 60px;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 2px solid $midlle-purple;
+  &__left{
+    position: relative;
+    .logo{
+      .mark{
+        position: absolute;
+        top: 5px;
+      }
+      .text{
+        position: absolute;
+        left: 40px;
+        top: 10px;
+      }
+    }
+  }
+  &__right{
+    .toggle{
+      position: relative;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      z-index: 3;
+      span{
+        display: block;
+        position: absolute;
+        width: 30px;
+        border-bottom: solid 3px $dark-purple;
+        -webkit-transition: .35s ease-in-out;
+        -moz-transition: .35s ease-in-out;
+        transition: .35s ease-in-out;
+        left: 6px;
+      }
+      span:nth-child(1){
+        top: 9px;
+      }
+      span:nth-child(2){
+        top: 18px;
+      }
+      span:nth-child(3){
+        top: 27px;
+      }
+    }
+    .active{
+      span:nth-child(1){
+        top: 18px;
+        left: 6px;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+      }
+      span:nth-child(2),span:nth-child(3){
+        top: 18px;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width:1023px){
+  .header{
+    display: none;
+  }
+  .header-responsive{
+    display: flex;
+  }
+}
