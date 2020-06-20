@@ -9,7 +9,7 @@
     TODO with the prefix, should I group by selector or property for weight savings?
 */
 html{
-  color: #545454;
+  color: $gray;
   background:#FFF;
 	font-family: "-apple-system", 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	font-weight: bold;
@@ -126,3 +126,13 @@ legend {
 }
 /* YUI CSS Detection Stamp */
 #yui3-css-stamp.cssreset { display: none; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+a{
+  text-decoration: none;
+  color: $gray;
+}

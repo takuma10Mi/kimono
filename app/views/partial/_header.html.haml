@@ -6,18 +6,23 @@
   .header__right
     .header__right__gide
       %p 着物リメイク〜和風でお洒落に〜
-      %span 【ご来店受付時間】9:00~17:00
+      %span 【受付時間】9:00~17:00
     %ul.header__right__list
       %li
-        トップページ
+        = link_to root_path do
+          トップページ
       %li
-        料金一覧
+        = link_to root_path do
+          料金一覧
       %li
-        商品一覧
+        = link_to root_path do
+          商品一覧
       %li
-        既製品一覧
+        = link_to root_path do
+          既製品一覧
       %li
-        お問い合わせ
+        = link_to root_path do
+          お問い合わせ
       = link_to "新規会員登録", "", class: "create-user-button"
       = link_to "ログイン", "", class: "login-button"
 
