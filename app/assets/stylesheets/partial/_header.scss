@@ -89,12 +89,13 @@
   z-index: 2;
   top: 0;
   left: 0;
-  background-color: #fffadc;
+  background-color: $light-purple;
   text-align: center;
   width: 100%;
   transform: translateY(-100%);
   transition: all 0.6s;
   ul{
+    margin-top: 58px;
     width: 100%;
     margin: 0 auto;
     padding: 0;
@@ -120,6 +121,7 @@
 }
 .active{
   transform: translateY(0%);
+  margin-top: 58px;
 }
 
 .header-responsive{
@@ -175,6 +177,7 @@
       }
     }
     .active{
+      margin-top: 0;
       span:nth-child(1){
         top: 18px;
         left: 6px;
