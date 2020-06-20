@@ -1,8 +1,12 @@
 .home{
   &__container{
     &__movie{
-      height: 200px;
       position: relative;
+
+      video{
+        width: 100%;
+        vertical-align: bottom;
+      }
     }
     &__pick-up{
       padding: 3rem;
