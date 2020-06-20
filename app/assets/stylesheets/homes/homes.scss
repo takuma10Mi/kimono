@@ -3,37 +3,6 @@
     &__movie{
       height: 200px;
       position: relative;
-      img{
-        width: 100%;
-        vertical-align: bottom;
-      }
-      &__info-box{
-        overflow-y: scroll;
-        background-color: #fff;
-        opacity: .9;
-        &__title{
-          span{
-            padding: 0.5rem 0;
-            margin: 0 1rem;
-            display: block;
-            text-align: center;
-            border-bottom: solid 1px gray;
-          }
-        }
-        &__content{
-          padding: 1rem 1.5rem;
-          .title{
-            display: block;
-            margin-bottom: 0.5rem;
-            font-size: 1.2rem;
-          }
-          .discription{
-            display: block;
-            font-weight: normal;
-            margin-bottom: 1.2rem;
-          }
-        }
-      }
     }
     &__pick-up{
       padding: 3rem;
@@ -81,7 +50,7 @@
     &__step, &__service{
       background-color: $light-purple;
     }
-    &__step, &__solve, &__service, &__worries{
+    &__step, &__production, &__service, &__worries{
       padding: 0 5rem 2rem 5rem;
       &__title{
         border-bottom: solid 2px $midlle-purple;
@@ -318,7 +287,7 @@
           }
         }
       }
-      &__step, &__solve, &__service, &__worries{
+      &__step, &__production, &__service, &__worries{
         padding: 0 3.5rem 2rem 3.5rem;
         &__content{
           &__up, &__down{
@@ -352,7 +321,7 @@
 }
 @media screen and (max-width:768px) {
   .home__container{
-    &__step, &__solve, &__service, &__worries{
+    &__step, &__production, &__service, &__worries{
       &__content{
         &__up, &__down{
           display: block;
@@ -391,7 +360,7 @@
 @media screen and (max-width:639px) {
   .home__container{
     
-    &__step, &__solve, &__service, &__worries{
+    &__step, &__production, &__service, &__worries{
       padding: 0 1.5rem 1rem 1.5rem;
       &__title{
         padding-top: 1.5rem;

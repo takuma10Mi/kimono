@@ -1,1 +1,26 @@
 .footer
+  .footer__top-btn
+    = link_to "▲" , "#wrap" , id: "return-top" , class: "return-top"
+  .footer__nav
+    %ul.footer__nav__list
+      %li.footer__nav__list__item
+        = link_to root_path do
+          %span トップページ
+      %li.footer__nav__list__item
+        = link_to root_path do
+          %span 料金一覧
+      %li.footer__nav__list__item
+        = link_to root_path do
+          %span 商品一覧
+      %li.footer__nav__list__item
+        = link_to root_path do
+          %span 既製品一覧
+    %ul.footer__nav__list.ul-last
+      %li.footer__nav__list__item.li-last
+        = link_to root_path do
+          %span お問い合わせ
+      %li.footer__nav__list__item.li-last
+        = link_to root_path do
+          %span 
+  %p.footer__copyright
+    %small Copyright© SINCE 2020 Rikimo All rights reseaved.

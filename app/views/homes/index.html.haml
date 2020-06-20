@@ -1,7 +1,7 @@
 .home
   .home__container
     .home__container__movie
-      
+      動画
     .home__container__step
       .home__container__step__title
         %span ご利用の流れ
@@ -25,7 +25,12 @@
                   ページより解答いたします。
           .home__container__step__content-responsive
             %span
-              ご自身でリメイクしたい着物をご用意していただきます。長さは最低でも1m×1m必要です。
+              ご自身でリメイクしたい着物をご用意していただきます。ご不明な点がございましたら
+            %span
+              = link_to root_path do
+                お問い合わせ
+            %span
+              ページより解答いたします。
           .home__container__step__content__up__second
             = image_tag 'kimono.jpg', alt: ''
             .title-zone
@@ -69,3 +74,7 @@
           .home__container__step__content-responsive
             %span
               選択していただいた内容をもとに、実際に作業を開始させていただきます。最後まで丁寧な作業を心がけておりますのでご安心ください。お客様のお手元に商品到着まで約1ヶ月程頂戴いたします。
+    .home__container__production
+      .home__container__production__title
+        %span 過去の作品
+      .home__container__step__content
