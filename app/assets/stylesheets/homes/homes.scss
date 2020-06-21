@@ -259,6 +259,9 @@
 @media screen and (max-width:1023px) {
   .home{
     &__container{
+      &__movie{
+        margin-top: 60px;
+      }
       &__pick-up{
         padding: 1.5rem;
         &__content{

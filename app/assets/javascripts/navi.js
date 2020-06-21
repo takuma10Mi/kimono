@@ -6,8 +6,8 @@ window.onload = function(){
 
 
   // footer-btn
-  $(document).on('click', '.footer__btn', function(){
-    $('.footer').toggleClass('hidden');
-    $('.footer__btn').toggleClass('hidden');
+  $(document).on('click', '.buttom__btn', function(){
+    $('.buttom').toggleClass('hidden');
+    $('.buttom__btn').toggleClass('hidden');
   });
 };
