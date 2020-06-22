@@ -49,5 +49,7 @@
 - 未完成
 
 ## Webページ
-
-- 未完成
+|PC用|スマートフォン用|
+|---|---|
+|会社概要|
+|![トップページ](https://user-images.githubusercontent.com/54468465/85217247-833f8d00-b3c9-11ea-9af4-6d9abaf2c828.png)|![トップページスマホ](https://user-images.githubusercontent.com/54468465/85217249-8dfa2200-b3c9-11ea-82b2-f19bb2e27680.png)|
