@@ -20,10 +20,8 @@
       %li
         = link_to root_path do
           既製品一覧
-      %li
-        = link_to root_path do
-          お問い合わせ
-      = link_to "新規会員登録", "", class: "create-user-button"
+      = link_to "お問い合わせ", "", class: "create-user-button"
+      -# 管理者なら以下を表示
       = link_to "管理画面", "", class: "admin-button"
 
 .navi
@@ -43,12 +41,6 @@
     %li
       = link_to root_path do
         お問い合わせ
-    %li
-      = link_to root_path do
-        新規会員登録
-    %li
-      = link_to root_path do
-        ログイン
 
 .header-responsive
   .header-responsive__left
