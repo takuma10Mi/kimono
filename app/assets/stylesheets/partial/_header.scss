@@ -35,7 +35,7 @@
     &__list{
       display: flex;
       position: relative;
-      li, .create-user-button , .login-button {
+      li, .create-user-button , .admin-button {
         position: relative;
         margin-right: 2.5rem;
         font-size: 1rem;
@@ -65,7 +65,7 @@
         transition: all 0.3s ease 0s;
         margin-right: 20px;
       }
-      .login-button{
+      .admin-button{
         top: -0.5rem;
         padding: 0.5rem;
         color: #fff;
@@ -74,7 +74,7 @@
         box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
         transition: all 0.3s ease 0s;
       }
-      .create-user-button:hover , .login-button:hover{
+      .create-user-button:hover , .admin-button:hover{
         box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
         transform: translateY(-0.1875em);
         opacity: .8;
