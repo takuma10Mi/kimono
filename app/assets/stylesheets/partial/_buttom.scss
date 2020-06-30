@@ -11,7 +11,7 @@
   transition: transform .3s, -webkit-transform .3s;
   display: flex;
   align-items: center;
-  background: $light-purple;
+  background: $light-blue;
 
   &__btn{
     position: absolute;
@@ -20,7 +20,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: $light-green;
+    background: $midlle-blue;
     border-radius: 10px 10px 0 0;
     color: #fff;
     font-weight: bold;
