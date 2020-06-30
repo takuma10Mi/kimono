@@ -2,7 +2,6 @@
   .header__left
     = link_to root_path, class: 'header__left__logo' do
       = image_tag 'logo.png', alt: 'ロゴ', size: '160x70', class: 'logo'
-      -# = image_tag 'logo_text.png', alt: 'ロゴ', size: '100x60', class: 'logo_text'
   .header__right
     .header__right__gide
       %p 着物リメイク〜和風でお洒落に〜
@@ -22,7 +21,7 @@
           既製品一覧
       = link_to "お問い合わせ", "", class: "create-user-button"
       -# 管理者なら以下を表示
-      = link_to "管理画面", "", class: "admin-button"
+      -# = link_to "管理画面", "", class: "admin-button"
 
 .navi
   %ul
@@ -46,7 +45,6 @@
   .header-responsive__left
     .logo
       = image_tag 'logo.png', alt: 'ロゴ', height: '30', width: '66', class: "mark"
-      -# = image_tag 'logo_text.png', alt: 'ロゴ', height: '38', width: '72', class: "text"
 
   .header-responsive__right
     .toggle
