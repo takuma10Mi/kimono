@@ -8,53 +8,11 @@
         vertical-align: bottom;
       }
     }
-    &__pick-up{
-      padding: 3rem;
-      &__content{
-        background-color: rgb(245, 245, 245);
-        padding: 1.5rem;
-        max-width: 60rem;
-        margin: 0 auto;
-        display: flex;
-        img{
-          width:53%;
-        }
-        &__right{
-          margin-left: 2rem;
-          width: 100%;
-          &__box{
-            width: 100%;
-            text-align: center;
-            .title{
-              font-size: 1.2rem;
-              margin: 0 0 2rem 0;
-              color: $dark-purple;
-            }
-            span:hover{
-              color: rgba($color: $dark-purple, $alpha: 0.7);
-            }
-            span{
-              display: block;
-              padding: 0.7rem;
-              background-color: #fff;
-              color: $dark-purple;
-              border-radius: 1.5rem;
-            }
-            .message-content{
-              padding: 1.5rem;
-              color: $gray;
-            }
-            .message-content:hover{
-              color: $gray;
-            } 
-          }
-        }
-      }
-    }
-    &__step, &__service{
+    
+    &__step {
       background-color: $light-purple;
     }
-    &__step, &__production, &__service, &__worries{
+    &__step, &__production {
       padding: 0 5rem 2rem 5rem;
       &__title{
         border-bottom: solid 2px $midlle-purple;
@@ -294,7 +252,7 @@
           }
         }
       }
-      &__step, &__production, &__service, &__worries{
+      &__step, &__production {
         padding: 0 3.5rem 2rem 3.5rem;
         &__content{
           &__up, &__down{
@@ -324,11 +282,21 @@
     }
   }
 }
-@media screen and (min-width:768px){
+@media screen and (min-width:769px){
+  .home__container__step__content{
+
+    &__up, &__down{
+      width: 100%;
+
+      &__first, &__second, &__third, &__fourth{
+        width: 50%;
+      }
+    }
+  }
 }
 @media screen and (max-width:768px) {
   .home__container{
-    &__step, &__production, &__service, &__worries{
+    &__step, &__production {
       &__content{
         &__up, &__down{
           display: block;
@@ -367,7 +335,7 @@
 @media screen and (max-width:639px) {
   .home__container{
     
-    &__step, &__production, &__service, &__worries{
+    &__step, &__production {
       padding: 0 1.5rem 1rem 1.5rem;
       &__title{
         padding-top: 1.5rem;
