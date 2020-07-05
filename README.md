@@ -98,7 +98,6 @@
   |サイズ|size|string|null: false|
   |カテゴリー（スカートなど）|categories|string|null: false|
   |性別|sex|integer|null: false|
-  |配送状態|status|integer|null: false|
   |既製品orリメイク|type|integer|null: false|
   |価格|fee|integer|null: false|
   |購入者|buyer_id|integer|null: true|
@@ -127,6 +126,7 @@
   |------|----|-------|
   |user_id|references|null :false, foreign_key :true|
   |product_id|references|null :false, foreign_key :true|
+  |配送状態|status|integer|null: false|
 
   ### Association
 
