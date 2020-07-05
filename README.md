@@ -86,7 +86,7 @@
 
   ### Association
 
-  - belongs_to :users
+  - belongs_to :user
 
   ## productsテーブル
 
@@ -118,7 +118,7 @@
 
   ### Association
 
-  - belongs_to :products
+  - belongs_to :product
 
   ## product_usersテーブル
 
@@ -130,8 +130,8 @@
 
   ### Association
 
-  - belongs_to :users
-  - belongs_to :products
+  - belongs_to :user
+  - belongs_to :product
 
   ## contactsテーブル
 
