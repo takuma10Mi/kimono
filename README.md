@@ -94,7 +94,7 @@
   |--|------|----|-------|
   |ID|id|integer|null: false|
   |商品名|name|string|null: false|
-  |商品説明|discription|text|null: false|
+  |商品説明|discription|string|null: false|
   |サイズ|size|string|null: false|
   |カテゴリー（スカートなど）|categories|string|null: false|
   |性別|sex|integer|null: false|
