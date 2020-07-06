@@ -63,8 +63,8 @@
   |ID|id|integer|null: false|
   |名前(全角)|name_full|string|null: false|
   |名前（カナ）|name_cana|string|null: false|
-  |メールアドレス|mail|string|null: false, unique: true|
-  |電話番号|call_number|string|null: false, unique: true|
+  |メールアドレス|mail|string|null: false|
+  |電話番号|call_number|string|null: false|
   |郵便番号|potal_code|string|null: false|
   |都道府県|prefectures|string|null: false|
   |市町村|municipalties|string|null: false|
@@ -140,8 +140,8 @@
   |ID|id|integer|null: false|
   |名前(全角)|name_full|string|null: false|
   |名前（カナ）|name_cana|string|null: false|
-  |メールアドレス|mail|string|null: false, unique: true|
-  |電話番号|call_number|integer|null: false, unique: true|
+  |メールアドレス|mail|string|null: false|
+  |電話番号|call_number|integer|null: false|
   |チェック項目|check_item|integer|null: false|
   |内容|content|string|null: false|
 
