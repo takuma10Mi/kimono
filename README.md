@@ -141,7 +141,7 @@
   |名前(全角)|name_full|string|null: false|
   |名前（カナ）|name_cana|string|null: false|
   |メールアドレス|mail|string|null: false|
-  |電話番号|call_number|integer|null: false|
+  |電話番号|call_number|string|null: false|
   |チェック項目|check_item|integer|null: false|
   |内容|content|string|null: false|
 
