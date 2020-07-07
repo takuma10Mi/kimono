@@ -1,8 +1,7 @@
-.header
+%header.header
   .header__left
     = link_to root_path, class: 'header__left__logo' do
-      = image_tag 'logo2.png', alt: 'ロゴ', size: '55x55', class: 'logo'
-      -# = image_tag 'logo_text.png', alt: 'ロゴ', size: '100x60', class: 'logo_text'
+      = image_tag 'logo.png', alt: 'ロゴ', size: '160x70', class: 'logo'
   .header__right
     .header__right__gide
       %p 着物リメイク〜和風でお洒落に〜
@@ -12,19 +11,18 @@
         = link_to root_path do
           トップページ
       %li
-        = link_to root_path do
+        = link_to homes_plan_path do
           料金一覧
       %li
-        = link_to root_path do
+        = link_to products_path do
           商品一覧
       %li
         = link_to root_path do
           既製品一覧
-      %li
-        = link_to root_path do
-          お問い合わせ
-      = link_to "新規会員登録", "", class: "create-user-button"
-      = link_to "ログイン", "", class: "login-button"
+      = link_to "よくあるご質問", homes_question_path, class: "create-user-button"
+      = link_to "お問い合わせ", homes_contact_path, class: "create-user-button"
+      -# 管理者なら以下を表示
+      -# = link_to "管理画面", "", class: "admin-button"
 
 .navi
   %ul
@@ -32,29 +30,25 @@
       = link_to root_path do
         トップページ
     %li
-      = link_to root_path do
+      = link_to homes_plan_path do
         料金一覧
     %li
-      = link_to root_path do
+      = link_to products_path do
         商品一覧
     %li
       = link_to root_path do
         既製品一覧
     %li
-      = link_to root_path do
+      = link_to homes_question_path do
+        よくある質問
+    %li
+      = link_to homes_contact_path do
         お問い合わせ
-    %li
-      = link_to root_path do
-        新規会員登録
-    %li
-      = link_to root_path do
-        ログイン
 
 .header-responsive
   .header-responsive__left
     .logo
-      = image_tag 'logo.png', alt: 'ロゴ', height: '30', width: '30', class: "mark"
-      -# = image_tag 'logo_text.png', alt: 'ロゴ', height: '38', width: '72', class: "text"
+      = image_tag 'logo.png', alt: 'ロゴ', height: '30', width: '66', class: "mark"
 
   .header-responsive__right
     .toggle

@@ -6,5 +6,11 @@
 @import "./partial/buttom";
 @import "font-awesome";
 
-// homeで使用するscss
-@import "./homes/homes";
+// homesで使用するscss
+@import "./homes/home";
+@import "./homes/plan";
+@import "./homes/question";
+@import "./homes/contact";
+
+// productsで使用するscss
+@import "./products/index";

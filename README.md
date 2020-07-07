@@ -3,9 +3,18 @@
 - ECサイトです。着物をお預かり、リメイクのやりとりをサイト上で完結できます。
 - 背景としてクライアントはホームページを所有しておらず、元々はアナログで実施しており地元の評判が良かったので、全国対応するために作成を考案しました。
 
+- URL 未完成
+
+- 製作者のtwitter
+
+  @Takumaroiine 
+  @mr_hiraru08 
+  @ARK0730_1989
+  @syomabusiness
+
 ## アプリケーション概要
 
-- 「Rikimo」のECサイト
+- 「Rekimo」のECサイト
 
 ## アプリケーションの機能一覧
 
@@ -30,6 +39,7 @@
 - パンくず表示機能
 
 ## アプリケーション内で使用している技術一覧
+
 |種別|名称|
 |------|----|
 |開発言語|Ruby(ver 2.5.8)|
@@ -46,7 +56,98 @@
 
 ## データベース
 
-- 未完成
+  ## usersテーブル
+
+  |名前|Column|Type|Options|
+  |---|------|----|-------|
+  |ID|id|integer|null: false|
+  |名前(全角)|name_full|string|null: false|
+  |名前（カナ）|name_cana|string|null: false|
+  |メールアドレス|mail|string|null: false|
+  |電話番号|call_number|string|null: false|
+  |郵便番号|potal_code|string|null: false|
+  |都道府県|prefectures|string|null: false|
+  |市町村|municipalties|string|null: false|
+  |番地|address|string|null: false|
+  |建物名（任意）|building_name|string|null: false|
+
+  ### Association
+
+  - has_one :cards
+  - has_many :products, through::product_users
+
+  ## cordsテーブル
+
+  |名前|Column|Type|Options|
+  |---|------|----|-------|
+  |ID|id|integer|null: false|
+  |ユーザーID|user_id|integer|null: false,foreign_key: true|
+  |トークン|token|string|null: false|
+
+  ### Association
+
+  - belongs_to :user
+
+  ## productsテーブル
+
+  |名前|Column|Type|Options|
+  |--|------|----|-------|
+  |ID|id|integer|null: false|
+  |商品名|name|string|null: false|
+  |商品説明|discription|string|null: false|
+  |サイズ|size|string|null: false|
+  |カテゴリー（スカートなど）|categories|string|null: false|
+  |性別|sex|integer|null: false|
+  |既製品orリメイク|type|integer|null: false|
+  |価格|fee|integer|null: false|
+  |購入者|buyer_id|integer|null: true|
+  <!-- 既製品のみ購入時にIDを付与する -->
+
+  ### Association
+
+  - has_many :photos
+  - has_many :users, through::product_users
+
+  ## photosテーブル
+
+  |名前|Column|Type|Options|
+  |--|------|----|-------|
+  |ID|id|integer|null: false|
+  |商品ID|product_id|integer|null: false,foreign_key: true|
+  |画像|image|string|null: false|
+
+  ### Association
+
+  - belongs_to :product
+
+  ## product_usersテーブル
+
+  |Column|Type|Options|
+  |------|----|-------|
+  |user_id|references|null :false, foreign_key :true|
+  |product_id|references|null :false, foreign_key :true|
+  |配送状態|status|integer|null: false|
+
+  ### Association
+
+  - belongs_to :user
+  - belongs_to :product
+
+  ## contactsテーブル
+
+  |名前|Column|Type|Options|
+  |---|------|----|-------|
+  |ID|id|integer|null: false|
+  |名前(全角)|name_full|string|null: false|
+  |名前（カナ）|name_cana|string|null: false|
+  |メールアドレス|mail|string|null: false|
+  |電話番号|call_number|string|null: false|
+  |チェック項目|check_item|integer|null: false|
+  |内容|content|string|null: false|
+
+  ### Association
+
+  - なし
 
 ## Webページ
 |PC用|スマートフォン用|
