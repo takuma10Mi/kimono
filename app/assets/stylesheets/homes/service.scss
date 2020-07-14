@@ -6,42 +6,23 @@
 
   &__container{
 
-    &__price{
+    &__price , &__size{
 
       &__title{
         margin: 3rem 0;
         text-align: center;
         border-bottom: 2px solid $midlle-purple;
         font-size: 2rem;
-        font-weight: bold;
       }
 
       &__body{
 
         &__reference{
-          
-          h3{
-            position: relative;
-            padding-left: 30px;
-            color: $dark-purple;
-            font-size: 1.2rem;
-            font-weight: bold;
-          }
-          h3:before{
-            position: absolute;
-            left: 0;
-            top: 50%;
-            margin-top: -7.5px;
-            width: 15px;
-            height: 15px;
-            background: $dark-purple;
-            content: "";
-          }
 
           &__box{
             margin-bottom: 2rem;
 
-            &__right{
+            &__right , &__under{
 
               &__text{
                 font-size: 1.1rem;
@@ -68,21 +49,6 @@
                 background: #fff;
                 border-radius: 10px;
                 border: 2px solid $dark-purple;
-
-                h4{
-                  margin-top: -50px;
-                  text-align: center;
-                  margin-bottom: 20px;
-
-                  span{
-                    display: inline-block;
-                    padding: 10px;
-                    color: #fff;
-                    font-size: 1rem;
-                    background: $midlle-purple;
-                    border-radius: 2rem;
-                  }
-                }
 
                 &__text{
                   margin: 1rem 0;
@@ -129,7 +95,7 @@
 
     &__container{
 
-      &__price{
+      &__price , &__size{
 
         &__title{
           margin: 5rem 0 0 0;
@@ -142,10 +108,14 @@
             
             &__box{
 
-              &__right{
+              &__right , &__under{
 
                 &__text{
                   margin-top: 2rem;
+
+                  .hidden-adaptive{
+                    display: none;
+                  }
                 }
               }
             }
@@ -164,7 +134,7 @@
   
     &__container{
 
-      &__price{
+      &__price , &__size{
 
         &__body{
           

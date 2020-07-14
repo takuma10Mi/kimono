@@ -33,3 +33,20 @@
                     = image_tag 'img-card.jpg', alt: 'クレジットカード'
                 %p.service__container__price__body__reference__box__right__payment__text.caution
                   弊社にお越しいただいた場合は現金でのお支払いが可能です。
+    .service__container__size
+      .service__container__size__title
+        %span サイズ一覧
+      .service__container__size__body
+        .service__container__size__body__reference
+          .service__container__size__body__reference__box
+            .service__container__size__body__reference__box__left
+              %h3 レディースサイズ
+              = render 'partial/table/ladies'
+            .service__container__size__body__reference__box__right
+              %h3 メンズサイズ
+              = render 'partial/table/mens'
+            .service__container__size__body__reference__box__under
+              %p.service__container__size__body__reference__box__under__text
+                サイズをご指定される場合は購入画面にて備考欄を設けておりますので
+                %br.hidden-adaptive
+                着丈・バスト・袖丈・肩幅をご記入の上、ご購入いただきますようよろしくお願いいたします。
