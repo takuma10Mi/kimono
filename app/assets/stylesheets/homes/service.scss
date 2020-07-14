@@ -1,0 +1,200 @@
+.service{
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 5rem;
+
+  &__container{
+
+    &__price{
+
+      &__title{
+        margin: 3rem 0;
+        text-align: center;
+        border-bottom: 2px solid $midlle-purple;
+        font-size: 2rem;
+        font-weight: bold;
+      }
+
+      &__body{
+
+        &__reference{
+          
+          h3{
+            position: relative;
+            padding-left: 30px;
+            color: $dark-purple;
+            font-size: 1.2rem;
+            font-weight: bold;
+          }
+          h3:before{
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -7.5px;
+            width: 15px;
+            height: 15px;
+            background: $dark-purple;
+            content: "";
+          }
+
+          &__box{
+            margin-bottom: 2rem;
+
+            &__right{
+
+              &__text{
+                font-size: 1.1rem;
+                line-height: 1.85;
+                margin-bottom: 40px;
+
+                &__caution{
+                  display: inline-block;
+                  position: relative;
+                  padding-left: 1.25em;
+                  font-size: 0.8rem;
+                }
+                &__caution:before{
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  content: "※";
+                }
+              }
+
+              &__payment{
+                margin: 0 auto;
+                padding: 30px 20px;
+                background: #fff;
+                border-radius: 10px;
+                border: 2px solid $dark-purple;
+
+                h4{
+                  margin-top: -50px;
+                  text-align: center;
+                  margin-bottom: 20px;
+
+                  span{
+                    display: inline-block;
+                    padding: 10px;
+                    color: #fff;
+                    font-size: 1rem;
+                    background: $midlle-purple;
+                    border-radius: 2rem;
+                  }
+                }
+
+                &__text{
+                  margin: 1rem 0;
+
+                  span{
+                    color: $dark-purple;
+
+                    img{
+                      vertical-align: bottom;
+                      max-width: 100%;
+                    }
+                  }
+                }
+
+                .caution{
+                  position: relative;
+                  padding-left: 1.25em;
+                  font-size: 0.8rem;
+                  margin-bottom: 0;
+                }
+
+                .caution:before{
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  content: "※";
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*レスポンシブデザイン*/
+
+
+/* service max-width: 1023px start */
+@media screen and (max-width:1023px) {
+  .service{
+    padding: 0 1.5rem;
+
+    &__container{
+
+      &__price{
+
+        &__title{
+          margin: 5rem 0 0 0;
+          font-size: 1.3rem;
+        }
+
+        &__body{
+          
+          &__reference{
+            
+            &__box{
+
+              &__right{
+
+                &__text{
+                  margin-top: 2rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* service max-width: 1023px end */
+
+
+/* service min-width: 1024px start */
+@media screen and (min-width:1024px) {
+  .service{
+  
+    &__container{
+
+      &__price{
+
+        &__body{
+          
+          &__reference{
+            
+            &__box{
+              display: flex;
+              flex-wrap: wrap;
+
+              &__left{
+                width: 48%;
+                margin-right: 2%;
+              }
+
+              &__right{
+                width: 48%;
+                margin-left: 2%;
+
+                &__payment{
+                  max-width: 30rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* service min-width: 1024px end */
+
+
+/*レスポンシブデザインend*/

@@ -127,6 +127,8 @@
   |user_id|references|null :false, foreign_key :true|
   |product_id|references|null :false, foreign_key :true|
   |配送状態|status|integer|null: false|
+  |裏地の有無|lining|integer|null: false|
+  |備考コメント|string|integer|null: false|
 
   ### Association
 

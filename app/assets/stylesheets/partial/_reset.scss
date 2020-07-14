@@ -84,7 +84,10 @@ th {
 }
 h1,
 h2,
-h3,
+h3{
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
 h4,
 h5,
 h6 {

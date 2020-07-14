@@ -1,8 +1,35 @@
 -# - set_meta_tags title: '料金・サイズ一覧', keywords: "着物リメイク 料金, 着物リメイク サイズ"
 
-.service_contents
-  .service_contents__title
-    %span 料金一覧
-  .service_contents__fee
-    .plan__contents__body__reference.inner
-      %h3 ジャンルごとの参考価格
+.service
+  .service__container
+    .service__container__price
+      .service__container__price__title
+        %span 料金一覧
+      .service__container__price__body
+        .service__container__price__body__reference
+          %h3 ジャンルごとの参考価格
+          .service__container__price__body__reference__box
+            .service__container__price__body__reference__box__left
+              = render 'partial/table/price'
+            .service__container__price__body__reference__box__right
+              %p.service__container__price__body__reference__box__right__text
+                ワンストップサービスにより低料金を実現することができます。ご予算の目安としてご覧ください。
+              %p.service__container__price__body__reference__box__right__text
+                %span.service__container__price__body__reference__box__right__text__caution
+                  裏地なし・ありを指定でき、どちらも料金は同じです。裏地ありの場合は着物についている裏布を使用しますが、
+                  裏地がない場合や汚れや傷のひどい場合はこちらでお任せの裏地を使用します。
+                %span.service__container__price__body__reference__box__right__text__caution
+                  着物を弊社に発送する場合の送料は恐れ入りますが、送料はお客様負担となります。
+                  完成品をお客様に発送する場合の送料はこちらで負担させていただきます。
+              .service__container__price__body__reference__box__right__payment
+                %h4
+                  %span お支払い方法
+                %p.service__container__price__body__reference__box__right__payment__text
+                  クレジットカードのみご利用いただけます。
+                %p.service__container__price__body__reference__box__right__payment__text
+                  %span
+                    ご利用可能なカード:
+                  %span
+                    = image_tag 'img-card.jpg', alt: 'クレジットカード'
+                %p.service__container__price__body__reference__box__right__payment__text.caution
+                  弊社にお越しいただいた場合は現金でのお支払いが可能です。
