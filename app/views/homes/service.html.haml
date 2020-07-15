@@ -10,7 +10,7 @@
           %h3 ジャンルごとの参考価格
           .service__container__price__body__reference__box
             .service__container__price__body__reference__box__left
-              = render 'partial/table/price'
+              = render 'partial/home-service/table/price'
             .service__container__price__body__reference__box__right
               %p.service__container__price__body__reference__box__right__text
                 ワンストップサービスにより低料金を実現することができます。ご予算の目安としてご覧ください。
@@ -37,16 +37,10 @@
       .service__container__size__title
         %span サイズ一覧
       .service__container__size__body
-        .service__container__size__body__reference
-          .service__container__size__body__reference__box
-            .service__container__size__body__reference__box__left
-              %h3 レディースサイズ
-              = render 'partial/table/ladies'
-            .service__container__size__body__reference__box__right
-              %h3 メンズサイズ
-              = render 'partial/table/mens'
-            .service__container__size__body__reference__box__under
-              %p.service__container__size__body__reference__box__under__text
-                サイズをご指定される場合は購入画面にて備考欄を設けておりますので
-                %br.hidden-adaptive
-                着丈・バスト・袖丈・肩幅をご記入の上、ご購入いただきますようよろしくお願いいたします。
+        = render 'partial/home-service/jacket'
+        = render 'partial/home-service/best'
+        .service__container__size__body__under
+          %p.service__container__size__body__under__text
+            サイズをご指定される場合は購入画面にて備考欄を設けておりますので
+            %br.hidden-adaptive
+            着丈・バスト・袖丈・肩幅をご記入の上、ご購入いただきますようよろしくお願いいたします。

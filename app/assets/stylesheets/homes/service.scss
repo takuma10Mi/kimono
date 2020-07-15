@@ -22,7 +22,7 @@
           &__box{
             margin-bottom: 2rem;
 
-            &__right , &__under{
+            &__right{
 
               &__text{
                 font-size: 1.1rem;
@@ -103,19 +103,26 @@
         }
 
         &__body{
+
+          &__under{
+
+            &__text{
+
+              .hidden-adaptive{
+                display: none;
+              }
+            }
+          }
           
           &__reference{
             
             &__box{
 
-              &__right , &__under{
+              &__left , &__right{
+                margin-bottom: 2rem;
 
                 &__text{
                   margin-top: 2rem;
-
-                  .hidden-adaptive{
-                    display: none;
-                  }
                 }
               }
             }

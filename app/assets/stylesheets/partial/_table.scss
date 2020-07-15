@@ -1,6 +1,15 @@
 .price__table , .mens__table , .ladies__table{
   width: 100%;
 
+  caption{
+    padding: 0.7rem 0;
+    background: $dark-purple;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
   th{
     padding: 0.7rem 0;
     background: $midlle-purple;
@@ -39,8 +48,4 @@
   tr:nth-of-type(even) td{
     background: $light-purple;
   }
-}
-
-.ladies__table{
-  margin-bottom: 1rem;
 }
