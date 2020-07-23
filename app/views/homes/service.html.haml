@@ -38,7 +38,7 @@
         %span サイズ一覧
       .service__container__size__body
         .tab_wrap
-          %input{id:"tab1" , type:"radio" , name:"tab_btn"}
+          %input{id:"tab1" , type:"radio" , name:"tab_btn" , checked:"checked"}
           %input{id:"tab2" , type:"radio" , name:"tab_btn"}
           %input{id:"tab3" , type:"radio" , name:"tab_btn"}
           %input{id:"tab4" , type:"radio" , name:"tab_btn"}
@@ -48,15 +48,15 @@
           %input{id:"tab8" , type:"radio" , name:"tab_btn"}
           %input{id:"tab9" , type:"radio" , name:"tab_btn"}
           .tab_area
-            %label.tab1_label{for:"tab1"} 表1
-            %label.tab2_label{for:"tab2"} 表2
-            %label.tab3_label{for:"tab3"} 表3
-            %label.tab4_label{for:"tab4"} 表4
-            %label.tab5_label{for:"tab5"} 表5
-            %label.tab6_label{for:"tab6"} 表6
-            %label.tab7_label{for:"tab7"} 表7
-            %label.tab8_label{for:"tab8"} 表8
-            %label.tab9_label{for:"tab9"} 表9
+            %label.tab1_label{for:"tab1"} 1
+            %label.tab2_label{for:"tab2"} 2
+            %label.tab3_label{for:"tab3"} 3
+            %label.tab4_label{for:"tab4"} 4
+            %label.tab5_label{for:"tab5"} 5
+            %label.tab6_label{for:"tab6"} 6
+            %label.tab7_label{for:"tab7"} 7
+            %label.tab8_label{for:"tab8"} 8
+            %label.tab9_label{for:"tab9"} 9
           .panel_area
             .tab_panel{id:"panel1"}
               = render 'partial/home-service/jacket'

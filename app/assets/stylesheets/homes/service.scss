@@ -88,6 +88,7 @@
       }
     }
   }
+  // タブ切り替え
   .tab_wrap{
     width:100%
   }
@@ -96,7 +97,7 @@
   }
   .tab_area{
     margin:20px 10px;
-    padding: 0 auto;
+    text-align: center;
     border-bottom: 2px solid $midlle-purple;
   }
   .tab_area label{
@@ -111,9 +112,6 @@
     transition:ease 0.2s opacity;
     border-radius: 10px 10px 0 0;
   }
-  // .tab_area label:hover {
-  //   opacity:0.5;
-  // }
   .tab_panel {
     width:100%;
     display:none;
@@ -213,6 +211,8 @@
 }
 /* service min-width: 1024px end */
 
+
+/* service min-width: 639px start */
 @media screen and (max-width: 639px){
   .service{
   
@@ -223,6 +223,7 @@
 
         &__title{
           padding-top: 1.5rem;
+          
           span{
             font-size: 1.3rem;
           }
@@ -231,4 +232,20 @@
     }
   }
 }
+/* service min-width: 639px end */
+
+
+/* service min-width: 767px start */
+@media screen and (max-width: 767px){
+  .service{
+
+    .tab_area label{
+      width: 1.8rem;
+      padding: 3px 0;
+      margin: 0;
+    }
+  }
+}
+/* service min-width: 767px end */
+
 /*レスポンシブデザインend*/
