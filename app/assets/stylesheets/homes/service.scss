@@ -2,14 +2,19 @@
   position: relative;
   max-width: 100%;
   margin: 0 auto;
-  padding: 0 5rem;
 
   &__container{
 
-    &__price , &__size{
 
+    &__size{
+      background-color: $light-purple;
+    }
+
+    &__price , &__size{
+      padding: 0 5rem 2rem 5rem;
+      
       &__title{
-        margin: 3rem 0;
+        padding-top: 3rem;
         text-align: center;
         border-bottom: 2px solid $midlle-purple;
         font-size: 2rem;
@@ -83,24 +88,59 @@
       }
     }
   }
+  .tab_wrap{
+    width:100%
+  }
+  input[type="radio"]{
+    display:none;
+  }
+  .tab_area{
+    margin:20px 10px;
+    padding: 0 auto;
+    border-bottom: 2px solid $midlle-purple;
+  }
+  .tab_area label{
+    width:3rem;
+    margin:0 5px; 
+    display:inline-block; 
+    padding:12px 0; 
+    color:#999; 
+    background:#ddd; 
+    text-align:center; 
+    cursor:pointer; 
+    transition:ease 0.2s opacity;
+    border-radius: 10px 10px 0 0;
+  }
+  // .tab_area label:hover {
+  //   opacity:0.5;
+  // }
+  .tab_panel {
+    width:100%;
+    display:none;
+  }
+  #tab1:checked ~ .tab_area .tab1_label, #tab2:checked ~ .tab_area .tab2_label, #tab3:checked ~ .tab_area .tab3_label ,
+  #tab4:checked ~ .tab_area .tab4_label, #tab5:checked ~ .tab_area .tab5_label, #tab6:checked ~ .tab_area .tab6_label ,
+  #tab7:checked ~ .tab_area .tab7_label, #tab8:checked ~ .tab_area .tab8_label, #tab9:checked ~ .tab_area .tab9_label{
+    background:$midlle-purple; 
+    color:#000;
+  }
+  #tab1:checked ~ .panel_area #panel1, #tab2:checked ~ .panel_area #panel2, #tab3:checked ~ .panel_area #panel3 ,
+  #tab4:checked ~ .panel_area #panel4, #tab5:checked ~ .panel_area #panel5, #tab6:checked ~ .panel_area #panel6 ,
+  #tab7:checked ~ .panel_area #panel7, #tab8:checked ~ .panel_area #panel8, #tab9:checked ~ .panel_area #panel9 {
+    display:block;
+  }
 }
-
 /*レスポンシブデザイン*/
 
 
 /* service max-width: 1023px start */
 @media screen and (max-width:1023px) {
   .service{
-    padding: 0 1.5rem;
 
     &__container{
 
       &__price , &__size{
-
-        &__title{
-          margin: 5rem 0 0 0;
-          font-size: 1.3rem;
-        }
+        padding: 0 3.5rem 2rem 3.5rem;
 
         &__body{
 
@@ -173,5 +213,22 @@
 }
 /* service min-width: 1024px end */
 
+@media screen and (max-width: 639px){
+  .service{
+  
+    &__container{
 
+      &__price , &__size{
+        padding: 0 1.5rem 1rem 1.5rem;
+
+        &__title{
+          padding-top: 1.5rem;
+          span{
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+  }
+}
 /*レスポンシブデザインend*/
