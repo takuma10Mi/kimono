@@ -19,8 +19,7 @@
       %li
         = link_to root_path do
           既製品一覧
-      = link_to "よくあるご質問", homes_question_path, class: "create-user-button"
-      = link_to "お問い合わせ", homes_contact_path, class: "create-user-button"
+      = link_to "お問い合わせ", homes_contact_path, class: "header-button"
       -# 管理者なら以下を表示
       -# = link_to "管理画面", "", class: "admin-button"
 
@@ -38,9 +37,6 @@
     %li
       = link_to root_path do
         既製品一覧
-    %li
-      = link_to homes_question_path do
-        よくある質問
     %li
       = link_to homes_contact_path do
         お問い合わせ

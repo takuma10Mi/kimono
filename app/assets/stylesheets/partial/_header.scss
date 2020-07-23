@@ -32,7 +32,7 @@
       display: flex;
       position: relative;
       padding-inline-start: 40px;
-      li, .create-user-button , .admin-button {
+      li, .header-button{
         position: relative;
         margin-right: 2.5rem;
         font-size: 1rem;
@@ -52,7 +52,7 @@
           width: 100%;
         }
       }
-      .create-user-button{
+      .header-button{
         top: -0.5rem;
         padding: 0.5rem;
         color: #fff;
@@ -62,16 +62,7 @@
         transition: all 0.3s ease 0s;
         margin-right: 20px;
       }
-      .admin-button{
-        top: -0.5rem;
-        padding: 0.5rem;
-        color: #fff;
-        border-radius: 0.6rem;
-        background-color: $dark-purple;
-        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
-        transition: all 0.3s ease 0s;
-      }
-      .create-user-button:hover , .admin-button:hover{
+      .header-button:hover{
         box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
         transform: translateY(-0.1875em);
         opacity: .8;
