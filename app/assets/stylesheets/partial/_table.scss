@@ -1,4 +1,4 @@
-.price__table , .mens__table , .ladies__table{
+table{
   width: 100%;
 
   caption{
@@ -20,20 +20,20 @@
     text-align: center;
   }
 
-  .price__table__thead__tr__th:nth-of-type(1){
+  .table__price__thead__tr__th:nth-of-type(1){
     width: 50%;
   }
 
-  .price__table__thead__tr__th:nth-of-type(2){
+  .table__price__thead__tr__th:nth-of-type(2){
     width: 20%;
   }
 
-  .price__table__thead__tr__th:nth-of-type(3){
+  .table__price__thead__tr__th:nth-of-type(3){
     width: 30%;
   }
 
   // メンズ,レディーステーブルの幅
-  .mens__table__thead__tr__th , .ladies__table__thead__tr__th{
+  .mens__table__thead__tr__th , .table__ladies__thead__tr__th{
     width: 20%;
   }
 
