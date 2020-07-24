@@ -1,0 +1,251 @@
+.service{
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+
+  &__container{
+
+
+    &__size{
+      background-color: $light-purple;
+    }
+
+    &__price , &__size{
+      padding: 0 5rem 2rem 5rem;
+      
+      &__title{
+        padding-top: 3rem;
+        text-align: center;
+        border-bottom: 2px solid $midlle-purple;
+        font-size: 2rem;
+      }
+
+      &__body{
+
+        &__reference{
+
+          &__box{
+            margin-bottom: 2rem;
+
+            &__right{
+
+              &__text{
+                font-size: 1.1rem;
+                line-height: 1.85;
+                margin-bottom: 40px;
+
+                &__caution{
+                  display: inline-block;
+                  position: relative;
+                  padding-left: 1.25em;
+                  font-size: 0.8rem;
+                }
+                &__caution:before{
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  content: "※";
+                }
+              }
+
+              &__payment{
+                margin: 0 auto;
+                padding: 30px 20px;
+                background: #fff;
+                border-radius: 10px;
+                border: 2px solid $dark-purple;
+
+                &__text{
+                  margin: 1rem 0;
+
+                  span{
+                    color: $dark-purple;
+
+                    img{
+                      vertical-align: bottom;
+                      max-width: 100%;
+                    }
+                  }
+                }
+
+                .caution{
+                  position: relative;
+                  padding-left: 1.25em;
+                  font-size: 0.8rem;
+                  margin-bottom: 0;
+                }
+
+                .caution:before{
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  content: "※";
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // タブ切り替え
+  .tab_wrap{
+    width:100%
+  }
+  input[type="radio"]{
+    display:none;
+  }
+  .tab_area{
+    margin:20px 10px;
+    text-align: center;
+    border-bottom: 2px solid $midlle-purple;
+  }
+  .tab_area label{
+    width:3rem;
+    margin:0 5px; 
+    display:inline-block; 
+    padding:12px 0; 
+    color:#999; 
+    background:#ddd; 
+    text-align:center; 
+    cursor:pointer; 
+    transition:ease 0.2s opacity;
+    border-radius: 10px 10px 0 0;
+  }
+  .tab_panel {
+    width:100%;
+    display:none;
+  }
+  #tab1:checked ~ .tab_area .tab1_label, #tab2:checked ~ .tab_area .tab2_label, #tab3:checked ~ .tab_area .tab3_label ,
+  #tab4:checked ~ .tab_area .tab4_label, #tab5:checked ~ .tab_area .tab5_label, #tab6:checked ~ .tab_area .tab6_label ,
+  #tab7:checked ~ .tab_area .tab7_label, #tab8:checked ~ .tab_area .tab8_label, #tab9:checked ~ .tab_area .tab9_label{
+    background:$midlle-purple; 
+    color:#000;
+  }
+  #tab1:checked ~ .panel_area #panel1, #tab2:checked ~ .panel_area #panel2, #tab3:checked ~ .panel_area #panel3 ,
+  #tab4:checked ~ .panel_area #panel4, #tab5:checked ~ .panel_area #panel5, #tab6:checked ~ .panel_area #panel6 ,
+  #tab7:checked ~ .panel_area #panel7, #tab8:checked ~ .panel_area #panel8, #tab9:checked ~ .panel_area #panel9 {
+    display:block;
+  }
+}
+/*レスポンシブデザイン*/
+
+
+/* service max-width: 1023px start */
+@media screen and (max-width:1023px) {
+  .service{
+
+    &__container{
+
+      &__price , &__size{
+        padding: 0 3.5rem 2rem 3.5rem;
+
+        &__body{
+
+          &__under{
+
+            &__text{
+
+              .hidden-adaptive{
+                display: none;
+              }
+            }
+          }
+          
+          &__reference{
+            
+            &__box{
+
+              &__left , &__right{
+                margin-bottom: 2rem;
+
+                &__text{
+                  margin-top: 2rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* service max-width: 1023px end */
+
+
+/* service min-width: 1024px start */
+@media screen and (min-width:1024px) {
+  .service{
+  
+    &__container{
+
+      &__price , &__size{
+
+        &__body{
+          
+          &__reference{
+            
+            &__box{
+              display: flex;
+              flex-wrap: wrap;
+
+              &__left{
+                width: 48%;
+                margin-right: 2%;
+              }
+
+              &__right{
+                width: 48%;
+                margin-left: 2%;
+
+                &__payment{
+                  max-width: 30rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* service min-width: 1024px end */
+
+
+/* service min-width: 639px start */
+@media screen and (max-width: 639px){
+  .service{
+  
+    &__container{
+
+      &__price , &__size{
+        padding: 0 1.5rem 1rem 1.5rem;
+
+        &__title{
+          padding-top: 1.5rem;
+          
+          span{
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+  }
+}
+/* service min-width: 639px end */
+
+
+/* service min-width: 767px start */
+@media screen and (max-width: 767px){
+  .service{
+
+    .tab_area label{
+      width: 1.8rem;
+      padding: 3px 0;
+      margin: 0;
+    }
+  }
+}
+/* service min-width: 767px end */
+
+/*レスポンシブデザインend*/

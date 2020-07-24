@@ -1,0 +1,79 @@
+-# - set_meta_tags title: '料金・サイズ一覧', keywords: "着物リメイク 料金, 着物リメイク サイズ"
+
+.service
+  .service__container
+    .service__container__price
+      .service__container__price__title
+        %span 料金一覧
+      .service__container__price__body
+        .service__container__price__body__reference
+          %h3 ジャンルごとの参考価格
+          .service__container__price__body__reference__box
+            .service__container__price__body__reference__box__left
+              = render 'partial/home-service/table/price'
+            .service__container__price__body__reference__box__right
+              %p.service__container__price__body__reference__box__right__text
+                ワンストップサービスにより低料金を実現することができます。ご予算の目安としてご覧ください。
+              %p.service__container__price__body__reference__box__right__text
+                %span.service__container__price__body__reference__box__right__text__caution
+                  裏地なし・ありを指定でき、どちらも料金は同じです。裏地ありの場合は着物についている裏布を使用しますが、
+                  裏地がない場合や汚れや傷のひどい場合はこちらでお任せの裏地を使用します。
+                %span.service__container__price__body__reference__box__right__text__caution
+                  着物を弊社に発送する場合の送料は恐れ入りますが、送料はお客様負担となります。
+                  完成品をお客様に発送する場合の送料はこちらで負担させていただきます。
+              .service__container__price__body__reference__box__right__payment
+                %h4
+                  %span お支払い方法
+                %p.service__container__price__body__reference__box__right__payment__text
+                  クレジットカードのみご利用いただけます。
+                %p.service__container__price__body__reference__box__right__payment__text
+                  %span
+                    ご利用可能なカード:
+                  %span
+                    = image_tag 'img-card.jpg', alt: 'クレジットカード'
+                %p.service__container__price__body__reference__box__right__payment__text.caution
+                  弊社にお越しいただいた場合は現金でのお支払いが可能です。
+    .service__container__size
+      .service__container__size__title
+        %span サイズ一覧
+      .service__container__size__body
+        .tab_wrap
+          %input{id:"tab1" , type:"radio" , name:"tab_btn" , checked:"checked"}
+          %input{id:"tab2" , type:"radio" , name:"tab_btn"}
+          %input{id:"tab3" , type:"radio" , name:"tab_btn"}
+          %input{id:"tab4" , type:"radio" , name:"tab_btn"}
+          %input{id:"tab5" , type:"radio" , name:"tab_btn"}
+          %input{id:"tab6" , type:"radio" , name:"tab_btn"}
+          %input{id:"tab7" , type:"radio" , name:"tab_btn"}
+          %input{id:"tab8" , type:"radio" , name:"tab_btn"}
+          .tab_area
+            %label.tab1_label{for:"tab1"} 1
+            %label.tab2_label{for:"tab2"} 2
+            %label.tab3_label{for:"tab3"} 3
+            %label.tab4_label{for:"tab4"} 4
+            %label.tab5_label{for:"tab5"} 5
+            %label.tab6_label{for:"tab6"} 6
+            %label.tab7_label{for:"tab7"} 7
+            %label.tab8_label{for:"tab8"} 8
+          .panel_area
+            .tab_panel{id:"panel1"}
+              = render 'partial/home-service/jacket'
+            .tab_panel{id:"panel2"}
+              = render 'partial/home-service/best'
+            .tab_panel{id:"panel3"}
+              = render 'partial/home-service/blouse'
+            .tab_panel{id:"panel4"}
+              = render 'partial/home-service/blouson'
+            .tab_panel{id:"panel5"}
+              = render 'partial/home-service/coat'
+            .tab_panel{id:"panel6"}
+              = render 'partial/home-service/one-piece'
+            .tab_panel{id:"panel7"}
+              = render 'partial/home-service/pants'
+            .tab_panel{id:"panel8"}
+              = render 'partial/home-service/skirt'
+        .service__container__size__body__under
+          %p.service__container__size__body__under__text
+            サイズをご指定される場合は購入画面にて備考欄を設けておりますので
+            %br.hidden-adaptive
+            着丈・バスト・袖丈・肩幅をご記入の上、ご購入いただきますようよろしくお願いいたします。

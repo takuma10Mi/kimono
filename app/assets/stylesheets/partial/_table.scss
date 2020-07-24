@@ -1,0 +1,90 @@
+// テーブル共通
+table{
+  width: 100%;
+
+  caption{
+    padding: 0.7rem 0;
+    background: $dark-purple;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  th{
+    padding: 0.7rem 0;
+    background: $midlle-purple;
+    color: #fff;
+    font-weight: bold;
+    border: 2px solid $dark-purple;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  td{
+    padding: 0.6rem 0;
+    background: #fff;
+    border: 2px solid $dark-purple;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  tr:nth-of-type(even) td{
+    background: $light-purple;
+  }
+}
+// テーブル共通終わり
+
+.table{
+  // テーブルの幅
+  &__price__thead__tr{
+    &__th:nth-of-type(1){
+      width: 50%;
+    }
+    &__th:nth-of-type(2){
+      width: 20%;
+    }
+    &__th:nth-of-type(3){
+      width: 30%;
+    }
+  }
+  &__mens, &__ladies{
+    &__thead__tr__th{
+      width: 20%;
+    }
+  }
+  // テーブルの幅終わり
+
+  // テーブルカラー
+  &__mens{
+    &__caption{
+      background: $dark-blue;
+    }
+    &__thead__tr__th{
+      background: $midlle-blue;
+      border: 2px solid $dark-blue;
+    }
+    &__tbody__tr__td{
+      border: 2px solid $dark-blue;
+    }
+    &__tbody__tr:nth-of-type(even) td{
+      background: $light-blue;
+    }
+  }
+  &__ladies{
+    &__caption{
+      background: $dark-red;
+    }
+    &__thead__tr__th{
+      background: $midlle-red;
+      border: 2px solid $dark-red;
+    }
+    &__tbody__tr__td{
+      border: 2px solid $dark-red;
+    }
+    &__tbody__tr:nth-of-type(even) td{
+      background: $light-red;
+    }
+  }
+  // テーブルカラー終わり
+}

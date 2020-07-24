@@ -4,8 +4,7 @@ Rails.application.routes.draw do
   root to: 'homes#home'
 
   # 料金一覧 よくある質問 お問い合わせ
-  get 'homes/plan', to: 'homes#plan'
-  get 'homes/question', to: 'homes#question'
+  get 'homes/service', to: 'homes#service'
   get 'homes/contact', to: 'homes#contact'
 
   # 商品一覧
