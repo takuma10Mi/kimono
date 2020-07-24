@@ -46,7 +46,6 @@
           %input{id:"tab6" , type:"radio" , name:"tab_btn"}
           %input{id:"tab7" , type:"radio" , name:"tab_btn"}
           %input{id:"tab8" , type:"radio" , name:"tab_btn"}
-          %input{id:"tab9" , type:"radio" , name:"tab_btn"}
           .tab_area
             %label.tab1_label{for:"tab1"} 1
             %label.tab2_label{for:"tab2"} 2
@@ -56,26 +55,23 @@
             %label.tab6_label{for:"tab6"} 6
             %label.tab7_label{for:"tab7"} 7
             %label.tab8_label{for:"tab8"} 8
-            %label.tab9_label{for:"tab9"} 9
           .panel_area
             .tab_panel{id:"panel1"}
               = render 'partial/home-service/jacket'
             .tab_panel{id:"panel2"}
               = render 'partial/home-service/best'
             .tab_panel{id:"panel3"}
-              %p panel3
+              = render 'partial/home-service/blouse'
             .tab_panel{id:"panel4"}
-              %p panel4
+              = render 'partial/home-service/blouson'
             .tab_panel{id:"panel5"}
-              %p panel5
+              = render 'partial/home-service/coat'
             .tab_panel{id:"panel6"}
-              %p panel6
+              = render 'partial/home-service/one-piece'
             .tab_panel{id:"panel7"}
-              %p panel7
+              = render 'partial/home-service/pants'
             .tab_panel{id:"panel8"}
-              %p panel8
-            .tab_panel{id:"panel9"}
-              %p panel9
+              = render 'partial/home-service/skirt'
         .service__container__size__body__under
           %p.service__container__size__body__under__text
             サイズをご指定される場合は購入画面にて備考欄を設けておりますので
