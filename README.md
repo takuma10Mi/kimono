@@ -155,6 +155,8 @@
 |PC用|スマートフォン用|
 |---|---|
 |会社概要|
-|![トップページ](https://user-images.githubusercontent.com/54468465/85217247-833f8d00-b3c9-11ea-9af4-6d9abaf2c828.png)|![トップページスマホ](https://user-images.githubusercontent.com/54468465/85217249-8dfa2200-b3c9-11ea-82b2-f19bb2e27680.png)|
+|![トップページmax](https://user-images.githubusercontent.com/54468465/88477506-86efa200-cf7b-11ea-85f3-b4cf5593b7c4.png)|![トップページmin](https://user-images.githubusercontent.com/54468465/88477510-8eaf4680-cf7b-11ea-87eb-72f077193e8c.png)|
+|料金・サイズ一覧|
+|![料金サイズ一覧max](https://user-images.githubusercontent.com/54468465/88477512-8fe07380-cf7b-11ea-9f51-969aff1ed119.png)|![料金サイズ一覧min](https://user-images.githubusercontent.com/54468465/88477514-90790a00-cf7b-11ea-9f49-af9a363370b3.png)|
 |お問い合わせ|
 |![お問い合わせmax](https://user-images.githubusercontent.com/54468465/88474522-4899b900-cf62-11ea-8270-61c16e78c612.png)|![お問い合わせmin](https://user-images.githubusercontent.com/54468465/88474547-8860a080-cf62-11ea-9f1d-57540857ec35.png)|
