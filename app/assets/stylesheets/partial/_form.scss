@@ -2,23 +2,32 @@
 .Form {
   padding: 3rem 3rem 0 3rem;
   width: 100%;
-}
-  .Form-Item {
+
+  &__Item{
     border-top: 1px solid #ddd;
     padding: 1.5rem 0;
     width: 100%;
     display: flex;
     align-items: center;
   }
-
-  .Form-Item:last-of-type {
+  
+  &__Item:last-of-type {
     border-bottom: 1px solid #ddd;
   }
-    .Form-Item-Label {
-      width: 100%;
-      max-width: 248px;
-      letter-spacing: 0.05em;
-    }
+
+  &__Btn {
+    font-size: 1.2rem;
+    border-radius: 0.4rem;
+    margin: 32px auto 0 auto;
+    padding: 1.2rem 0;
+    width: 280px;
+    display: block;
+    letter-spacing: 0.05em;
+    background: $dark-purple;
+    color: #fff;
+  }
+}
+
     .Form-Item-Label.isMsg {
       margin-top: 8px;
       margin-bottom: auto;
@@ -53,17 +62,6 @@
       flex: 1;
       width: 100%;
     }
-  .Form-Btn {
-    font-size: 1.2rem;
-    border-radius: 0.4rem;
-    margin: 32px auto 0 auto;
-    padding: 1.2rem 0;
-    width: 280px;
-    display: block;
-    letter-spacing: 0.05em;
-    background: $dark-purple;
-    color: #fff;
-  }
 
 // ラジオボタン
 .radio{
@@ -108,11 +106,18 @@
 @media screen and (max-width: 1023px) {
   .Form {
     padding: 1rem 1rem 0 1rem;
-  }
-    .Form-Item {
+
+    &__Item {
       padding: 1rem;
       flex-wrap: wrap;
     }
+
+    &__Btn {
+      margin-top: 24px;
+      padding: 0.5rem 0;
+      width: 160px;
+    }
+  }
       .Form-Item-Label {
         max-width: inherit;
         display: flex;
@@ -133,11 +138,7 @@
         height: 200px;
         flex: inherit;
       }
-    .Form-Btn {
-      margin-top: 24px;
-      padding: 0.5rem 0;
-      width: 160px;
-    }
+
   .radio{
     height: auto;
   }
