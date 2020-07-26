@@ -1,4 +1,28 @@
-// お問い合わせの必須、任意
+// 共通.scss
+// container-padding
+@mixin container-padding-max() {
+  padding: 0 5rem 2rem 5rem;
+}
+@mixin container-padding-max1023px() {
+  padding: 0 3.5rem 2rem 3.5rem;
+}
+@mixin container-padding-max639px() {
+  padding: 0 1.5rem 1rem 1.5rem;
+}
+// タイトル
+@mixin title-max() {
+  padding-top: 3rem;
+  text-align: center;
+  border-bottom: 2px solid $midlle-purple;
+  font-size: 2rem;
+}
+@mixin title-max639px() {
+  padding-top: 1.5rem;
+  font-size: 1.3rem;
+}
+
+// _form.scss
+// 必須、任意タグ
 @mixin Required-Any() {
   font-size: 0.9rem;
   border-radius: 0.4rem;
