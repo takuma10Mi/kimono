@@ -1,5 +1,5 @@
 .cp_qa{
-  margin: 2rem 0;
+  padding: 3rem 3rem 0 3rem;
 }
 .cp_qa .cp_actab {
   position: relative;
@@ -83,4 +83,10 @@
   transform: rotateZ(45deg);
   -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
+}
+
+@media screen and (max-width: 639px){
+  .cp_qa{
+    padding: 1rem 1rem 0 1rem;
+  }
 }

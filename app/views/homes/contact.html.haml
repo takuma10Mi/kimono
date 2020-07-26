@@ -9,3 +9,40 @@
       .contact__container__inquiry__title
         %span ご相談・お問い合わせ
       .contact__container__inquiry__body
+        .Form
+          .Form-Item
+            %p.Form-Item-Label
+              %span.Form-Item-Label-Required 必須
+              氏名
+            %input{type:"text" , class:"Form-Item-Input" , placeholder:"例）山田 太郎"}
+          .Form-Item
+            %p.Form-Item-Label
+              %span.Form-Item-Label-Required 必須
+              フリガナ
+            %input{type:"text" , class:"Form-Item-Input" , placeholder:"例）ヤマダ タロウ"}
+          .Form-Item
+            %p.Form-Item-Label
+              %span.Form-Item-Label-Required 必須
+              メールアドレス
+            %input{type:"email" , class:"Form-Item-Input" , placeholder:"例）example@gmail.com"}
+          .Form-Item
+            %p.Form-Item-Label
+              %span.Form-Item-Label-Required 任意
+              電話番号
+            %input{type:"text" , class:"Form-Item-Input" , placeholder:"例）090-0000-0000"}
+          .Form-Item
+            %p.Form-Item-Label
+              %span.Form-Item-Label-Required 任意
+              チェックボックス
+            %input{type:"radio" , class:"" , name:""}
+              %span 商品について聞きたい
+            %input{type:"radio" , class:"" , name:""}
+              %span 気軽に訪問したい
+            %input{type:"radio" , class:"" , name:""}
+              %span その他
+          .Form-Item
+            %p.Form-Item-Label.isMsg
+              %span.Form-Item-Label-Required 必須
+              お問い合わせ内容
+            %textarea.Form-Item-Textarea
+          %input{type:"submit" , class:"Form-Btn" , value:"送信する"}

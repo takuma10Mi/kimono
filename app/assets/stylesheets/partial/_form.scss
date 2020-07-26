@@ -1,0 +1,107 @@
+.Form {
+  padding: 3rem 3rem 0 3rem;
+  width: 100%;
+}
+  .Form-Item {
+    border-top: 1px solid #ddd;
+    padding: 1.5rem 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .Form-Item:last-of-type {
+    border-bottom: 1px solid #ddd;
+  }
+    .Form-Item-Label {
+      width: 100%;
+      max-width: 248px;
+      letter-spacing: 0.05em;
+    }
+    .Form-Item-Label.isMsg {
+      margin-top: 8px;
+      margin-bottom: auto;
+    }
+      .Form-Item-Label-Required {
+        border-radius: 6px;
+        margin-right: 8px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        width: 48px;
+        display: inline-block;
+        text-align: center;
+        background: #5bc8ac;
+        color: #fff;
+      }
+    .Form-Item-Input {
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      margin-left: 40px;
+      padding-left: 1em;
+      padding-right: 1em;
+      height: 48px;
+      flex: 1;
+      width: 100%;
+    }
+    .Form-Item-Textarea {
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      margin-left: 40px;
+      padding-left: 1em;
+      padding-right: 1em;
+      height: 216px;
+      flex: 1;
+      width: 100%;
+    }
+  .Form-Btn {
+    font-size: 1.2rem;
+    border-radius: 6px;
+    margin: 32px auto 0 auto;
+    padding: 20px 0;
+    width: 280px;
+    display: block;
+    letter-spacing: 0.05em;
+    background: $dark-purple;
+    color: #fff;
+  }
+
+@media screen and (max-width: 1023px) {
+  .Form {
+    padding: 1rem 1rem 0 1rem;
+  }
+    .Form-Item {
+      padding: 1rem;
+      flex-wrap: wrap;
+    }
+      .Form-Item-Label {
+        max-width: inherit;
+        display: flex;
+        align-items: center;
+      }
+      .Form-Item-Label.isMsg {
+        margin-top: 0;
+      }
+        .Form-Item-Label-Required {
+          border-radius: 4px;
+          padding-top: 4px;
+          padding-bottom: 4px;
+        }
+      .Form-Item-Input {
+        margin-left: 0;
+        margin-top: 18px;
+        height: 40px;
+        flex: inherit;
+      }
+      .Form-Item-Textarea {
+        margin-top: 18px;
+        margin-left: 0;
+        height: 200px;
+        flex: inherit;
+      }
+    .Form-Btn {
+      margin-top: 24px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      width: 160px;
+    }
+}
