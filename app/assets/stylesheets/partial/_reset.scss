@@ -14,14 +14,9 @@ html{
 	font-family: "-apple-system", 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	font-weight: bold;
 }
-/*
-  TODO remove settings on BODY since we can't namespace it.
-*/
-/*
-  TODO test putting a class on HEAD.
-      - Fails on FF.
-*/
-body,
+body{
+	margin: 98px 0 0 0;
+}
 div,
 dl,
 dt,
@@ -165,4 +160,10 @@ legend {
 a{
   text-decoration: none;
   color: $gray;
+}
+
+@media screen and (max-width:1024px){
+	body{
+		margin: 60px 0 0 0;
+	}
 }
