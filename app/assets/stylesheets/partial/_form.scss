@@ -21,15 +21,12 @@
       letter-spacing: 0.05em;
 
       &__Required {
-        font-size: 0.9rem;
-        border-radius: 0.4rem;
-        margin-right: 8px;
-        padding: 0.5rem 0;
-        width: 48px;
-        display: inline-block;
-        text-align: center;
         background: $midlle-red;
-        color: #fff;
+        @include Required-Any();
+      }
+      &__Any {
+        background: $midlle-green;
+        @include Required-Any();
       }
     }
 
