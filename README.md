@@ -156,3 +156,5 @@
 |---|---|
 |会社概要|
 |![トップページ](https://user-images.githubusercontent.com/54468465/85217247-833f8d00-b3c9-11ea-9af4-6d9abaf2c828.png)|![トップページスマホ](https://user-images.githubusercontent.com/54468465/85217249-8dfa2200-b3c9-11ea-82b2-f19bb2e27680.png)|
+|お問い合わせ|
+|![お問い合わせmax](https://user-images.githubusercontent.com/54468465/88474522-4899b900-cf62-11ea-8270-61c16e78c612.png)|![お問い合わせmin](https://user-images.githubusercontent.com/54468465/88474547-8860a080-cf62-11ea-9f1d-57540857ec35.png)|
