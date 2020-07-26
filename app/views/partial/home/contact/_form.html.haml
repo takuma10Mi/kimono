@@ -1,29 +1,29 @@
 .Form
   .Form__Item
-    %p.Form-Item-Label
-      %span.Form-Item-Label-Required 必須
+    %p.Form__Item__Label
+      %span.Form__Item__Label__Required 必須
       氏名
-    %input{type:"text" , class:"Form-Item-Input" , placeholder:"例）山田 太郎"}
+    %input{type:"text" , class:"Form__Item__Input" , placeholder:"例）山田 太郎"}
   .Form__Item
-    %p.Form-Item-Label
-      %span.Form-Item-Label-Required 必須
+    %p.Form__Item__Label
+      %span.Form__Item__Label__Required 必須
       フリガナ
-    %input{type:"text" , class:"Form-Item-Input" , placeholder:"例）ヤマダ タロウ"}
+    %input{type:"text" , class:"Form__Item__Input" , placeholder:"例）ヤマダ タロウ"}
   .Form__Item
-    %p.Form-Item-Label
-      %span.Form-Item-Label-Required 必須
+    %p.Form__Item__Label
+      %span.Form__Item__Label__Required 必須
       メールアドレス
-    %input{type:"email" , class:"Form-Item-Input" , placeholder:"例）example@gmail.com"}
+    %input{type:"email" , class:"Form__Item__Input" , placeholder:"例）example@gmail.com"}
   .Form__Item
-    %p.Form-Item-Label
-      %span.Form-Item-Label-Required 任意
+    %p.Form__Item__Label
+      %span.Form__Item__Label__Required 任意
       電話番号
-    %input{type:"text" , class:"Form-Item-Input" , placeholder:"例）090-0000-0000"}
+    %input{type:"text" , class:"Form__Item__Input" , placeholder:"例）090-0000-0000"}
   .Form__Item
-    %p.Form-Item-Label
-      %span.Form-Item-Label-Required 任意
+    %p.Form__Item__Label
+      %span.Form__Item__Label__Required 任意
       チェックボックス
-    .Form-Item-Input.radio
+    .Form__Item__radio
       %input{type:"radio" , name:"radio" , class:"radio-input" , id:"radio-01" , checked:"checked"}
       %label{for:"radio-01"} 商品について聞きたい
       %br
@@ -34,8 +34,8 @@
       %label{for:"radio-03"} その他
       %br
   .Form__Item
-    %p.Form-Item-Label.isMsg
-      %span.Form-Item-Label-Required 必須
+    %p.Form__Item__Label.Form__Item__isMsg
+      %span.Form__Item__Label__Required 必須
       お問い合わせ内容
-    %textarea.Form-Item-Textarea
+    %textarea.Form__Item__Textarea
   %input{type:"submit" , class:"Form__Btn" , value:"送信する"}

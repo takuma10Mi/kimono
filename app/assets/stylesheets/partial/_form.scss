@@ -9,6 +9,91 @@
     width: 100%;
     display: flex;
     align-items: center;
+
+    &__Label , &__isMsg {
+      margin-top: 8px;
+      margin-bottom: auto;
+    }
+
+    &__Label {
+      width: 100%;
+      max-width: 248px;
+      letter-spacing: 0.05em;
+
+      &__Required {
+        font-size: 0.9rem;
+        border-radius: 0.4rem;
+        margin-right: 8px;
+        padding: 0.5rem 0;
+        width: 48px;
+        display: inline-block;
+        text-align: center;
+        background: $midlle-red;
+        color: #fff;
+      }
+    }
+
+    &__Input , &__radio{
+      border: 1px solid #ddd;
+      border-radius: 0.4rem;
+      margin-left: 40px;
+      padding: 0 1em;
+      height: 48px;
+      flex: 1;
+      width: 100%;
+    }
+
+    // ラジオボタン
+    &__radio{
+      padding: 1em;
+      height: auto;
+      background-color: #fff;
+
+      .radio-input{
+        display: none;
+      }
+      .radio-input + label{
+        padding-left: 20px;
+        position:relative;
+        margin-right: 20px;
+      }
+      .radio-input + label::before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 15px;
+        height: 15px;
+        border: 1px solid #999;
+        border-radius: 50%;
+      }
+      .radio-input:checked + label{
+        color: $dark-purple;
+      }
+      .radio-input:checked + label::after{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 11px;
+        height: 11px;
+        background: $dark-purple;
+        border-radius: 50%;
+      }
+    }
+
+    &__Textarea {
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      margin-left: 40px;
+      padding-left: 1em;
+      padding-right: 1em;
+      height: 216px;
+      flex: 1;
+      width: 100%;
+    }
   }
   
   &__Item:last-of-type {
@@ -28,81 +113,6 @@
   }
 }
 
-    .Form-Item-Label.isMsg {
-      margin-top: 8px;
-      margin-bottom: auto;
-    }
-      .Form-Item-Label-Required {
-        font-size: 0.9rem;
-        border-radius: 0.4rem;
-        margin-right: 8px;
-        padding: 0.5rem 0;
-        width: 48px;
-        display: inline-block;
-        text-align: center;
-        background: $midlle-red;
-        color: #fff;
-      }
-    .Form-Item-Input {
-      border: 1px solid #ddd;
-      border-radius: 0.4rem;
-      margin-left: 40px;
-      padding: 0 1em;
-      height: 48px;
-      flex: 1;
-      width: 100%;
-    }
-    .Form-Item-Textarea {
-      border: 1px solid #ddd;
-      border-radius: 6px;
-      margin-left: 40px;
-      padding-left: 1em;
-      padding-right: 1em;
-      height: 216px;
-      flex: 1;
-      width: 100%;
-    }
-
-// ラジオボタン
-.radio{
-  padding: 1em;
-  height: auto;
-  background-color: #fff;
-}
-.radio-input{
-  display: none;
-}
-.radio-input + label{
-  padding-left: 20px;
-  position:relative;
-  margin-right: 20px;
-}
-.radio-input + label::before{
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 15px;
-  height: 15px;
-  border: 1px solid #999;
-  border-radius: 50%;
-}
-.radio-input:checked + label{
-  color: $dark-purple;
-}
-.radio-input:checked + label::after{
-  content: "";
-  display: block;
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  width: 11px;
-  height: 11px;
-  background: $dark-purple;
-  border-radius: 50%;
-}
-
 @media screen and (max-width: 1023px) {
   .Form {
     padding: 1rem 1rem 0 1rem;
@@ -110,6 +120,34 @@
     &__Item {
       padding: 1rem;
       flex-wrap: wrap;
+
+      &__Label {
+        max-width: inherit;
+        display: flex;
+        align-items: center;
+      }
+
+      &__isMsg {
+        margin-top: 0;
+      }
+
+      &__Input , &__radio{
+        margin-left: 0;
+        margin-top: 18px;
+        height: 40px;
+        flex: inherit;
+      }
+
+      &__radio {
+        height: auto;
+      }
+
+      &__Textarea {
+        margin-top: 18px;
+        margin-left: 0;
+        height: 200px;
+        flex: inherit;
+      }
     }
 
     &__Btn {
@@ -117,29 +155,5 @@
       padding: 0.5rem 0;
       width: 160px;
     }
-  }
-      .Form-Item-Label {
-        max-width: inherit;
-        display: flex;
-        align-items: center;
-      }
-      .Form-Item-Label.isMsg {
-        margin-top: 0;
-      }
-      .Form-Item-Input {
-        margin-left: 0;
-        margin-top: 18px;
-        height: 40px;
-        flex: inherit;
-      }
-      .Form-Item-Textarea {
-        margin-top: 18px;
-        margin-left: 0;
-        height: 200px;
-        flex: inherit;
-      }
-
-  .radio{
-    height: auto;
   }
 }
