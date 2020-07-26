@@ -16,5 +16,9 @@ Rails.application.routes.draw do
       get 'done'
      end
   end
+
+  # 管理者ページ
+  resources :admins do
+  end
   
 end
