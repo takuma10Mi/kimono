@@ -116,10 +116,9 @@
 
 @media screen and (max-width: 1023px) {
   .Form {
-    padding: 1rem 1rem 0 1rem;
+    padding: 3rem 3rem 0 3rem;
 
     &__Item {
-      padding: 1rem;
       flex-wrap: wrap;
 
       &__Label {
@@ -156,5 +155,11 @@
       padding: 0.5rem 0;
       width: 160px;
     }
+  }
+}
+
+@media screen and (max-width: 639px){
+  .Form {
+    padding: 0 1.5rem 1rem 1.5rem;
   }
 }
