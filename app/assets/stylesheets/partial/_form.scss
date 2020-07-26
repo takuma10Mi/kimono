@@ -33,7 +33,7 @@
       }
     }
 
-    &__Input , &__radio{
+    &__Input , &__Radio{
       border: 1px solid #ddd;
       border-radius: 0.4rem;
       margin-left: 40px;
@@ -44,20 +44,20 @@
     }
 
     // ラジオボタン
-    &__radio{
+    &__Radio{
       padding: 1em;
       height: auto;
       background-color: #fff;
 
-      .radio-input{
+      &__Input{
         display: none;
       }
-      .radio-input + label{
+      &__Input + label{
         padding-left: 20px;
         position:relative;
         margin-right: 20px;
       }
-      .radio-input + label::before{
+      &__Input + label::before{
         content: "";
         display: block;
         position: absolute;
@@ -68,10 +68,10 @@
         border: 1px solid #999;
         border-radius: 50%;
       }
-      .radio-input:checked + label{
+      &__Input:checked + label{
         color: $dark-purple;
       }
-      .radio-input:checked + label::after{
+      &__Input:checked + label::after{
         content: "";
         display: block;
         position: absolute;
@@ -83,6 +83,7 @@
         border-radius: 50%;
       }
     }
+    // ラジオボタン終わり
 
     &__Textarea {
       border: 1px solid #ddd;
@@ -131,14 +132,14 @@
         margin-top: 0;
       }
 
-      &__Input , &__radio{
+      &__Input , &__Radio{
         margin-left: 0;
         margin-top: 18px;
         height: 40px;
         flex: inherit;
       }
 
-      &__radio {
+      &__Radio {
         height: auto;
       }
 
