@@ -1,1 +1,12 @@
-よくあるご質問,お問い合わせ
+.contact
+  .contact__container
+    .contact__container__question
+      .contact__container__question__title
+        %span よくある質問
+      .contact__container__question__body
+        = render 'partial/home/contact/question'
+    .contact__container__inquiry
+      .contact__container__inquiry__title
+        %span ご相談・お問い合わせ
+      .contact__container__inquiry__body
+        = render 'partial/home/contact/form'

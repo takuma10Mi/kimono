@@ -2,8 +2,7 @@
   position: relative;
   border-top: 2px solid $midlle-purple;
   text-align: center;
-  margin-top: 3rem;
-
+  
   &__top-btn{
     display: block;
 
@@ -67,7 +66,7 @@
     &__nav{
       margin: 2rem 0 0 0;
       
-      .ul-last{
+      .li-last{
         border-bottom: 1px #bbbfc0 solid;
       }
 

@@ -1,0 +1,11 @@
+// お問い合わせの必須、任意
+@mixin Required-Any() {
+  font-size: 0.9rem;
+  border-radius: 0.4rem;
+  margin-right: 8px;
+  padding: 0.5rem 0;
+  width: 48px;
+  display: inline-block;
+  text-align: center;
+  color: #fff;
+}

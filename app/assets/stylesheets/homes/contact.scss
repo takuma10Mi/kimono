@@ -1,0 +1,53 @@
+.contact{
+
+  &__container{
+    
+    &__inquiry{
+      background-color: $light-purple;
+    }
+
+    &__question , &__inquiry{
+      padding: 0 5rem 2rem 5rem;
+
+      &__title{
+        padding-top: 3rem;
+        text-align: center;
+        border-bottom: 2px solid $midlle-purple;
+        font-size: 2rem;
+      }
+
+      &__body{
+
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px){
+  .contact{
+  
+    &__container , &__inquiry{
+  
+      &__question{
+        padding: 0 3.5rem 2rem 3.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 639px){
+  .contact{
+  
+    &__container{
+  
+      &__question , &__inquiry{
+        padding: 0 1.5rem 1rem 1.5rem;
+
+        &__title{
+          padding-top: 1.5rem;
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}

@@ -1,10 +1,13 @@
 // 共通で使用するscss
 @import "./partial/color_variable";  /* _color_variable.scssを読み込む 共通フォント*/
+@import "./partial/mixin";
 @import "./partial/reset";  /* _reset.scssを読み込む */
 @import "./partial/header";
 @import "./partial/footer";
 @import "./partial/buttom";
 @import "./partial/table";
+@import "./partial/question";
+@import "./partial/form";
 @import "font-awesome";
 
 // homesで使用するscss
