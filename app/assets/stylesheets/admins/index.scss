@@ -1,0 +1,62 @@
+.admin{
+
+  &__container{
+
+    &__function , &__product{
+      padding: 0 5rem 2rem 5rem;
+      
+      &__title{
+        padding-top: 3rem;
+        text-align: center;
+        border-bottom: 2px solid $midlle-purple;
+        font-size: 2rem;
+      }
+
+      &__body{
+
+      }
+    }
+  }
+}
+
+
+/* service max-width: 1023px start */
+@media screen and (max-width:1023px) {
+  .admin{
+
+    &__container{
+
+      &__function , &__product{
+        padding: 0 3.5rem 2rem 3.5rem;
+
+        &__body{
+
+        }
+      }
+    }
+  }
+}
+/* service max-width: 1023px end */
+
+
+/* service min-width: 639px start */
+@media screen and (max-width: 639px){
+  .admin{
+  
+    &__container{
+
+      &__function , &__product{
+        padding: 0 1.5rem 1rem 1.5rem;
+
+        &__title{
+          padding-top: 1.5rem;
+          
+          span{
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+  }
+}
+/* service min-width: 639px end */
