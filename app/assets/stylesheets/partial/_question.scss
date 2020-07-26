@@ -31,7 +31,7 @@
 }
 .cp_qa .cp_actab label:hover {
   transition: all 0.3s;
-  color: #00838f;
+  color: $dark-green;
 }
 /* --質問の＋アイコン */
 .cp_qa .cp_actab label::after {
