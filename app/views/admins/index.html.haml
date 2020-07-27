@@ -4,15 +4,15 @@
       .admin__container__function__title
         %span 管理者機能一覧
       .admin__container__function__body
-        %ul
+        %ul.admin__container__function__body__btn
           %li
             = link_to "出品する", "#", class: "exhibition-button"
           %li
             = link_to "配送処理をする", "#", class: "delivery-button"
           %li
-            = link_to "購入禁止にする", "#", class: "ban-button"
+            %button{type: "button" , class: "ban-button"} 購入を禁止状態にする
           %li
-            = link_to "購入を再開する", "#", class: "restart-button"
+            %button{type: "button" , class: "restart-button"} 購入を再開状態にする
     .admin__container__product
       .admin__container__product__title
         %span 商品一覧
