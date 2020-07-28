@@ -22,7 +22,7 @@ Rails.application.routes.draw do
     # idは不要なのでcollectionを使用
     collection do
       # 配送管理ページ
-      get 'delivery'
+      get "delivery", to: "admins#delivery"
      end
   end
   
