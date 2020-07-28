@@ -1,4 +1,51 @@
-// お問い合わせの必須、任意
+// 共通.scss始まり
+// container-padding
+@mixin container-padding-max() {
+  padding: 0 5rem 2rem 5rem;
+}
+@mixin container-padding-max1023px() {
+  padding: 0 3.5rem 2rem 3.5rem;
+}
+@mixin container-padding-max639px() {
+  padding: 0 1.5rem 1rem 1.5rem;
+}
+
+// container-body-padding
+@mixin container-body-padding-max() {
+  padding: 3rem 3rem 0 3rem;
+}
+@mixin container-body-padding-max639px() {
+  padding: 1rem 1rem 0 1rem;
+}
+
+// タイトル
+@mixin title-max() {
+  padding-top: 3rem;
+  text-align: center;
+  border-bottom: 2px solid $midlle-purple;
+  font-size: 2rem;
+}
+@mixin title-max639px() {
+  padding-top: 1.5rem;
+  font-size: 1.3rem;
+}
+
+// ボタン
+@mixin button() {
+  color: #fff;
+  border-radius: 0.6rem;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease 0s;
+  padding: 1rem;
+  width: 100%;
+  display: inline-block;
+  cursor: pointer;
+}
+// 共通.scss終わり
+
+
+// _form.scss始まり
+// 必須、任意タグ
 @mixin Required-Any() {
   font-size: 0.9rem;
   border-radius: 0.4rem;
@@ -9,3 +56,4 @@
   text-align: center;
   color: #fff;
 }
+// _form.scss終わり

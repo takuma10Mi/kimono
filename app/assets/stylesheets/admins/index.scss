@@ -1,0 +1,94 @@
+.admin{
+
+  &__container{
+
+    &__function , &__product{
+      @include container-padding-max();
+      
+      &__title{
+        @include title-max();
+      }
+
+      &__body{
+
+        &__btn{
+          text-align:center;
+          @include container-body-padding-max();
+
+          &__list{
+            margin-bottom: 1em;
+
+            .exhibition-button{
+              background-color: $dark-purple;
+              @include button();
+            }
+            .delivery-button{
+              background-color: $dark-green;
+              @include button();
+            }
+            .ban-button{
+              background-color: $dark-red;
+              @include button();
+            }
+            .restart-button{
+              background-color: $dark-blue;
+              @include button();
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/* service max-width: 1023px start */
+@media screen and (max-width:1023px) {
+  .admin{
+
+    &__container{
+
+      &__function , &__product{
+        @include container-padding-max1023px();
+
+        &__body{
+
+        }
+      }
+    }
+  }
+}
+/* service max-width: 1023px end */
+
+
+/* service min-width: 639px start */
+@media screen and (max-width: 639px){
+  .admin{
+  
+    &__container{
+
+      &__function , &__product{
+        @include container-padding-max639px();
+
+        &__title{
+          @include title-max639px();
+          
+        }
+        &__body{
+
+          &__btn{
+            @include container-body-padding-max639px();
+
+            &__list{
+
+              .exhibition-button , .delivery-button , .ban-button , .restart-button{
+                padding: 0.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* service min-width: 639px end */

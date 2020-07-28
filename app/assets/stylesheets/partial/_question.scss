@@ -1,5 +1,5 @@
 .cp_qa{
-  padding: 3rem 3rem 0 3rem;
+  @include container-body-padding-max();
 }
 .cp_qa .cp_actab {
   position: relative;
@@ -87,6 +87,6 @@
 
 @media screen and (max-width: 639px){
   .cp_qa{
-    padding: 1rem 1rem 0 1rem;
+    @include container-body-padding-max639px();
   }
 }

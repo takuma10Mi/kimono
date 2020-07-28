@@ -16,5 +16,14 @@ Rails.application.routes.draw do
       get 'done'
      end
   end
+
+  # 管理者ページ
+  resources :admins do
+    # idは不要なのでcollectionを使用
+    collection do
+      # 配送管理ページ
+      get "delivery", to: "admins#delivery"
+     end
+  end
   
 end

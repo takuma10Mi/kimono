@@ -160,3 +160,5 @@
 |![料金サイズ一覧max](https://user-images.githubusercontent.com/54468465/88477512-8fe07380-cf7b-11ea-9f51-969aff1ed119.png)|![料金サイズ一覧min](https://user-images.githubusercontent.com/54468465/88477514-90790a00-cf7b-11ea-9f49-af9a363370b3.png)|
 |お問い合わせ|
 |![お問い合わせmax](https://user-images.githubusercontent.com/54468465/88474522-4899b900-cf62-11ea-8270-61c16e78c612.png)|![お問い合わせmin](https://user-images.githubusercontent.com/54468465/88474547-8860a080-cf62-11ea-9f1d-57540857ec35.png)|
+|管理者ページ|
+|![管理者ページmax](https://user-images.githubusercontent.com/54468465/88624516-14e59d00-d0e2-11ea-94f9-5266e3e7b62f.png)|![管理者ページmin](https://user-images.githubusercontent.com/54468465/88624615-452d3b80-d0e2-11ea-96bd-88c797ac01a9.png)|

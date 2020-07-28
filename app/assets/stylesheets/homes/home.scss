@@ -8,20 +8,13 @@
         vertical-align: bottom;
       }
     }
-    
     &__step {
       background-color: $light-purple;
     }
     &__step, &__production {
-      padding: 0 5rem 2rem 5rem;
+      @include container-padding-max();
       &__title{
-        border-bottom: solid 2px $midlle-purple;
-        padding-top: 3rem;
-        text-align: center;
-        span{
-          font-size: 2rem;
-          font-weight: bold;
-        }
+        @include title-max();
       }
       &__content-responsive{
         display: none;
@@ -253,7 +246,7 @@
         }
       }
       &__step, &__production {
-        padding: 0 3.5rem 2rem 3.5rem;
+        @include container-padding-max1023px();
         &__content{
           &__up, &__down{
             margin-bottom: 1.5rem;
@@ -336,12 +329,10 @@
   .home__container{
     
     &__step, &__production {
-      padding: 0 1.5rem 1rem 1.5rem;
+      @include container-padding-max639px();
       &__title{
-        padding-top: 1.5rem;
-        span{
-          font-size: 1.3rem;
-        }
+        @include title-max639px();
+        
       }
       &__content-responsive{
         display: block;
