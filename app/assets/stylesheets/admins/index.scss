@@ -11,6 +11,30 @@
 
       &__body{
 
+        &__btn{
+          text-align:center;
+          padding: 2rem 5rem;
+
+          &__list{
+
+            .exhibition-button{
+              background-color: $dark-purple;
+              @include button();
+            }
+            .delivery-button{
+              background-color: $dark-green;
+              @include button();
+            }
+            .ban-button{
+              background-color: $dark-red;
+              @include button();
+            }
+            .restart-button{
+              background-color: $dark-blue;
+              @include button();
+            }
+          }
+        }
       }
     }
   }

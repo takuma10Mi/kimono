@@ -1,4 +1,4 @@
-// 共通.scss
+// 共通.scss始まり
 // container-padding
 @mixin container-padding-max() {
   padding: 0 5rem 2rem 5rem;
@@ -20,8 +20,18 @@
   padding-top: 1.5rem;
   font-size: 1.3rem;
 }
+// ボタン
+@mixin button() {
+  color: #fff;
+  border-radius: 0.6rem;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease 0s;
+  padding: 0.5rem;
+}
+// 共通.scss終わり
 
-// _form.scss
+
+// _form.scss始まり
 // 必須、任意タグ
 @mixin Required-Any() {
   font-size: 0.9rem;
@@ -33,3 +43,4 @@
   text-align: center;
   color: #fff;
 }
+// _form.scss終わり
