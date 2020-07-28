@@ -13,9 +13,10 @@
 
         &__btn{
           text-align:center;
-          padding: 2rem 5rem;
+          @include container-body-padding-max();
 
           &__list{
+            margin-bottom: 1em;
 
             .exhibition-button{
               background-color: $dark-purple;
@@ -72,6 +73,19 @@
         &__title{
           @include title-max639px();
           
+        }
+        &__body{
+
+          &__btn{
+            @include container-body-padding-max639px();
+
+            &__list{
+
+              .exhibition-button , .delivery-button , .ban-button , .restart-button{
+                padding: 0.5rem;
+              }
+            }
+          }
         }
       }
     }

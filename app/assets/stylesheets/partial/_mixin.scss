@@ -9,6 +9,15 @@
 @mixin container-padding-max639px() {
   padding: 0 1.5rem 1rem 1.5rem;
 }
+
+// container-body-padding
+@mixin container-body-padding-max() {
+  padding: 3rem 3rem 0 3rem;
+}
+@mixin container-body-padding-max639px() {
+  padding: 1rem 1rem 0 1rem;
+}
+
 // タイトル
 @mixin title-max() {
   padding-top: 3rem;
@@ -20,13 +29,17 @@
   padding-top: 1.5rem;
   font-size: 1.3rem;
 }
+
 // ボタン
 @mixin button() {
   color: #fff;
   border-radius: 0.6rem;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
   transition: all 0.3s ease 0s;
-  padding: 0.5rem;
+  padding: 1rem;
+  width: 100%;
+  display: inline-block;
+  cursor: pointer;
 }
 // 共通.scss終わり
 
