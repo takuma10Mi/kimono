@@ -1,3 +1,63 @@
-// Place all the styles related to the products controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.product-index{
+
+  &__container{
+
+    &__content {
+      @include container-padding-max();
+
+      &__title{
+        @include title-max();
+      }
+
+      &__body{
+
+        &__ul{
+          display: flex;
+          flex-wrap: wrap;
+
+          &__item{
+            position: relative;
+            padding: 1rem;
+            width: 25%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px){
+  .product-index{
+  
+    &__container {
+  
+      &__content{
+        @include container-padding-max1023px();
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 639px){
+  .product-index{
+  
+    &__container{
+  
+      &__content {
+        @include container-padding-max639px();
+
+        &__title{
+          @include title-max639px();
+        }
+        &__body{
+
+          &__ul{
+  
+            &__item{
+              width: 50%;
+            }
+          }
+      }
+    }
+  }
+}
