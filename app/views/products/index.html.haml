@@ -5,4 +5,16 @@
         %span 商品一覧ページ
       .product-index__container__content__body
         %ul.product-index__container__content__body__ul
+          -# listのwidthは25%、レスポンシブ時は50%
           %li.product-index__container__content__body__ul__item
+            .product-index__container__content__body__ul__item__box
+              -# box内のどこをクリックしてもリンクに飛べるようにaタグで囲む
+              %a.product-index__container__content__body__ul__item__box__href
+                -# figureタグは写真や文字などのまとまりを表す
+                %figure.product-index__container__content__body__ul__item__box__href__figure
+                  .product-index__container__content__body__ul__item__box__href__figure__over-image
+                    = image_tag "product-img.jpg"
+                  %figcaption.product-index__container__content__body__ul__item__box__href__figure__under-text
+                    -# 全角15文字まで
+                    %p ジャケットリメイク
+                    %p 25,000円

@@ -1,6 +1,7 @@
 .product-index{
 
   &__container{
+    background-color: $light-purple;
 
     &__content {
       @include container-padding-max();
@@ -19,6 +20,47 @@
             position: relative;
             padding: 1rem;
             width: 25%;
+
+            &__box:hover{
+              border: solid 1px $midlle-blue;
+            }
+
+            &__box{
+
+              &__href{
+                width: 100%;
+                cursor: pointer;
+                display: inline-block;
+                vertical-align: top;
+
+                &__figure{
+                  background-color: #fff;
+                  box-shadow: 0 2px 4px rgba(0,0,0,.18);
+                  margin: 0;
+
+                  &__over-image{
+                    overflow: hidden;
+                    padding: 0 0 100%;
+                    position: relative;
+
+                    img{
+                      position: absolute;
+                      height: 100%;
+                      -o-object-fit: cover;
+                      object-fit: cover;
+                      width: 100%;
+                    }
+                  }
+
+                  &__under-text{
+                    line-height: 1.4em;
+                    padding: 1rem;
+                    white-space: normal;
+                    word-break: break-word;
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -57,6 +99,7 @@
               width: 50%;
             }
           }
+        }
       }
     }
   }
