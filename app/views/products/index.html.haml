@@ -1,1 +1,34 @@
-商品一覧ページ
+.product-index
+  .product-index__container
+    .product-index__container__content
+      .product-index__container__content__title
+        %span 商品一覧ページ
+      .product-index__container__content__body
+        -# ulからcmsとして使用
+        %ul.product-index__container__content__body__ul
+          %li.product-index__container__content__body__ul__item
+            -# imageは配列画像の1枚目を表示
+            .product-index__container__content__body__ul__item__image
+              = image_tag "product-img.jpg"
+            .product-index__container__content__body__ul__item__info
+              -# h2は商品の名前
+              %h2.product-index__container__content__body__ul__item__info__name
+                テーラード・ジャケット
+              -# pは商品の説明
+              %p.product-index__container__content__body__ul__item__info__text
+                ハイゴージ、ハイシェイプなどクラシックなフォルムでありながら従来より低めに設定された釦位置により深めのVゾーンを強調し、フロントのカッタウェイラインがエレガントさを表現しています。クラシックの部分とセクシーさを融合したモデルです。
+              -# arrayは配列画像の2~5枚目を表示
+              .product-index__container__content__body__ul__item__info__array
+                %ul.product-index__container__content__body__ul__item__info__array__fix
+                  %li.product-index__container__content__body__ul__item__info__array__fix__item
+                    = image_tag "product-img.jpg"
+                  %li.product-index__container__content__body__ul__item__info__array__fix__item
+                    = image_tag "product-img.jpg"
+                  %li.product-index__container__content__body__ul__item__info__array__fix__item
+                    = image_tag "product-img.jpg"
+                  %li.product-index__container__content__body__ul__item__info__array__fix__item
+                    = image_tag "product-img.jpg"
+              -# moreは商品詳細ページへ
+              .product-index__container__content__body__ul__item__info__more
+                -# showへのpassは商品のidを持ったところに飛ぶようにする
+                = link_to 'この商品を詳しく見る' , product_path(1) , class: "product-index__container__content__body__ul__item__info__more__btn"

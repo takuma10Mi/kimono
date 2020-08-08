@@ -1,20 +1,20 @@
-.admin
-  .admin__container
-    .admin__container__function
-      .admin__container__function__title
+.admin-index
+  .admin-index__container
+    .admin-index__container__function
+      .admin-index__container__function__title
         %span 管理者機能一覧
-      .admin__container__function__body
-        %ul.admin__container__function__body__btn
-          %li.admin__container__function__body__btn__list
+      .admin-index__container__function__body
+        %ul.admin-index__container__function__body__btn
+          %li.admin-index__container__function__body__btn__list
             = link_to '出品する' , new_admin_path , class: "exhibition-button"
-          %li.admin__container__function__body__btn__list
+          %li.admin-index__container__function__body__btn__list
             = link_to '配送処理をする' , delivery_admins_path , class: "delivery-button"
-          %li.admin__container__function__body__btn__list
+          %li.admin-index__container__function__body__btn__list
             %a.ban-button 購入を禁止状態にする
-          %li.admin__container__function__body__btn__list
+          %li.admin-index__container__function__body__btn__list
             %a.restart-button 購入を再開状態にする
-    .admin__container__product
-      .admin__container__product__title
+    .admin-index__container__product
+      .admin-index__container__product__title
         %span 商品一覧
-      .admin__container__product__body
+      .admin-index__container__product__body
         商品一覧ページが完成次第にrenderで引っ張る

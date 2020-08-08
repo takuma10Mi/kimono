@@ -1,3 +1,188 @@
-// Place all the styles related to the products controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.product-index{
+
+  &__container{
+
+    &__content {
+      @include container-padding-max();
+
+      &__title{
+        @include title-max();
+      }
+
+      &__body{
+
+        &__ul{
+
+          &__item{
+            width: 100%;
+            padding: 0 2rem;
+            margin: 2rem 0;
+            display: flex;
+
+            &__image{
+              width: 30%;
+
+              img{
+                max-width: 100%;
+                height: auto;
+              }
+            }
+            
+            &__info{
+              width: 60%;
+              margin-left:auto;
+
+              &__text{
+                font-size: 1.2vw;
+              }
+
+              &__array{
+                margin: 2rem 0 1rem;
+
+                &__fix{
+                  display: flex;
+
+                  &__item{
+                    margin-right: 2rem;
+                    width: 25%;
+
+                    img{
+                      max-width: 100%;
+                      height: auto;
+                    }
+                  }
+
+                  &__item:last-child{
+                    margin-right: 0rem;
+                  }
+                }
+              }
+
+              &__more{
+                text-align: right;
+
+                &__btn{
+                  position: relative;
+                  display: inline-block;
+                  border: 1px solid $dark-purple;
+                  line-height: 100%;
+                  padding: 16px 67px 16px 30px;
+                  color: $dark-purple;
+                  border-radius: 0.3rem;
+                }
+                
+                &__btn:after{
+                  content: "";
+                  position: absolute;
+                  display: block;
+                  width: 10px;
+                  height: 10px;
+                  right: 20px;
+                  top: 50%;
+                  margin-top: -5px;
+                  border-top: 2px solid $dark-purple;
+                  border-right: 2px solid $dark-purple;
+                  -webkit-transform: rotate(45deg);
+                  transform: rotate(45deg);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px){
+  .product-index{
+  
+    &__container {
+  
+      &__content{
+        @include container-padding-max1023px();
+      }
+    }
+  }
+}
+
+
+/* service min-width: 767px start */
+@media screen and (max-width: 767px){
+  .product-index{
+  
+    &__container{
+  
+      &__content {
+
+        &__title{
+
+        }
+        &__body{
+
+          &__ul{
+            
+            &__item{
+              display: block;
+              padding: 0;
+
+              &__image{
+                float: none;
+                width: 100%;
+                text-align: center;
+
+                img{
+                  width: 240px;
+                }
+              }
+              
+              &__info{
+                width: 100%;
+                text-align: center;
+
+                &__text{
+                  font-size: 0.8rem;
+                }
+
+                &__array{
+
+                  &__fix{
+  
+                    &__item{
+                      margin: 0;
+                    }
+                  }
+                }
+
+                &__more{
+                  text-align: center;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* service min-width: 767px end */
+
+
+@media screen and (max-width: 639px){
+  .product-index{
+  
+    &__container{
+  
+      &__content {
+        @include container-padding-max639px();
+
+        &__title{
+          @include title-max639px();
+        }
+        &__body{
+
+        }
+      }
+    }
+  }
+}
