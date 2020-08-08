@@ -20,22 +20,17 @@
 
 - レスポンシブ対応
 - お問い合わせ機能／よくある質問
-- ユーザーログイン／ログアウト機能
 - reCAPTCHA機能
-- 管理者ログイン／管理者ログアウト機能
-- ユーザー情報編集機能
-- マイページ表示機能
 - 出品中／売り切れ商品表示機能
-- 購入側過去の取引表示機能
 - クレジットカード登録／削除機能
 - 商品購入機能／取り消し機能
+- 自社の商品出品／編集／削除機能
 
 - 取引中コメント機能
-- 着物受け取り通知（自分から見て）機能
+- 着物受け取り通知（自分から見て）機能／完成品発送通知機能
 
 - 領収書機能（できればPDF表示）
-- 自社の商品出品／編集／削除機能
-- ブログ機能又はインスタグラムAPI取得
+- インスタグラムAPI取得
 - パンくず表示機能
 
 ## アプリケーション内で使用している技術一覧
@@ -158,6 +153,8 @@
 |![トップページmax](https://user-images.githubusercontent.com/54468465/88477506-86efa200-cf7b-11ea-85f3-b4cf5593b7c4.png)|![トップページmin](https://user-images.githubusercontent.com/54468465/88477510-8eaf4680-cf7b-11ea-87eb-72f077193e8c.png)|
 |料金・サイズ一覧|
 |![料金サイズ一覧max](https://user-images.githubusercontent.com/54468465/88477512-8fe07380-cf7b-11ea-9f51-969aff1ed119.png)|![料金サイズ一覧min](https://user-images.githubusercontent.com/54468465/88477514-90790a00-cf7b-11ea-9f49-af9a363370b3.png)|
+|お問い合わせ|
+|![商品一覧max](https://user-images.githubusercontent.com/54468465/89701716-788a8880-d974-11ea-99c0-cb8059b6a8f1.png)|![商品一覧min](https://user-images.githubusercontent.com/54468465/89701719-7de7d300-d974-11ea-8da2-839f98fdee3c.png)|
 |お問い合わせ|
 |![お問い合わせmax](https://user-images.githubusercontent.com/54468465/88474522-4899b900-cf62-11ea-8270-61c16e78c612.png)|![お問い合わせmin](https://user-images.githubusercontent.com/54468465/88474547-8860a080-cf62-11ea-9f1d-57540857ec35.png)|
 |管理者ページ|
