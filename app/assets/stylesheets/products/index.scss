@@ -1,7 +1,6 @@
 .product-index{
 
   &__container{
-    background-color: $light-purple;
 
     &__content {
       @include container-padding-max();
@@ -13,51 +12,78 @@
       &__body{
 
         &__ul{
-          display: flex;
-          flex-wrap: wrap;
 
           &__item{
-            position: relative;
-            padding: 1rem;
-            width: 25%;
+            width: 100%;
+            padding: 0 2rem;
+            margin: 2rem 0;
+            display: flex;
 
-            &__box:hover{
-              border: solid 1px $midlle-blue;
+            &__image{
+              width: 30%;
+
+              img{
+                max-width: 100%;
+                height: auto;
+              }
             }
+            
+            &__info{
+              width: 60%;
+              margin-left:auto;
 
-            &__box{
+              &__text{
+                font-size: 1.2vw;
+              }
 
-              &__href{
-                width: 100%;
-                cursor: pointer;
-                display: inline-block;
-                vertical-align: top;
+              &__array{
+                margin: 2rem 0 1rem;
 
-                &__figure{
-                  background-color: #fff;
-                  box-shadow: 0 2px 4px rgba(0,0,0,.18);
-                  margin: 0;
+                &__fix{
+                  display: flex;
 
-                  &__over-image{
-                    overflow: hidden;
-                    padding: 0 0 100%;
-                    position: relative;
+                  &__item{
+                    margin-right: 2rem;
+                    width: 25%;
 
                     img{
-                      position: absolute;
-                      height: 100%;
-                      -o-object-fit: cover;
-                      object-fit: cover;
-                      width: 100%;
+                      max-width: 100%;
+                      height: auto;
                     }
                   }
 
-                  &__under-text{
-                    line-height: 1.4em;
-                    padding: 1rem;
-                    white-space: normal;
-                    word-break: break-word;
+                  &__item:last-child{
+                    margin-right: 0rem;
                   }
+                }
+              }
+
+              &__more{
+                text-align: right;
+
+                &__btn{
+                  position: relative;
+                  display: inline-block;
+                  border: 1px solid $dark-purple;
+                  line-height: 100%;
+                  padding: 16px 67px 16px 30px;
+                  color: $dark-purple;
+                  border-radius: 0.3rem;
+                }
+                
+                &__btn:after{
+                  content: "";
+                  position: absolute;
+                  display: block;
+                  width: 10px;
+                  height: 10px;
+                  right: 20px;
+                  top: 50%;
+                  margin-top: -5px;
+                  border-top: 2px solid $dark-purple;
+                  border-right: 2px solid $dark-purple;
+                  -webkit-transform: rotate(45deg);
+                  transform: rotate(45deg);
                 }
               }
             }
@@ -80,6 +106,68 @@
   }
 }
 
+
+/* service min-width: 767px start */
+@media screen and (max-width: 767px){
+  .product-index{
+  
+    &__container{
+  
+      &__content {
+
+        &__title{
+
+        }
+        &__body{
+
+          &__ul{
+            
+            &__item{
+              display: block;
+              padding: 0;
+
+              &__image{
+                float: none;
+                width: 100%;
+                text-align: center;
+
+                img{
+                  width: 240px;
+                }
+              }
+              
+              &__info{
+                width: 100%;
+                text-align: center;
+
+                &__text{
+                  font-size: 0.8rem;
+                }
+
+                &__array{
+
+                  &__fix{
+  
+                    &__item{
+                      margin: 0;
+                    }
+                  }
+                }
+
+                &__more{
+                  text-align: center;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* service min-width: 767px end */
+
+
 @media screen and (max-width: 639px){
   .product-index{
   
@@ -93,12 +181,6 @@
         }
         &__body{
 
-          &__ul{
-  
-            &__item{
-              width: 50%;
-            }
-          }
         }
       }
     }
