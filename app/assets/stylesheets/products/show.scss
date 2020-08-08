@@ -11,6 +11,50 @@
 
       &__body{
         margin: 0 auto;
+
+        &__box{
+
+          &__left{
+
+          }
+
+          &__right{
+            
+          }
+        }
+      }
+    }
+  }
+}
+
+/* service min-width: 1024px start */
+@media screen and (min-width:1024px) {
+  .product-show{
+  
+    &__container{
+  
+      &__content {
+
+        &__title{
+
+        }
+        &__body{
+
+          &__box{
+            display: flex;
+            flex-wrap: wrap;
+
+            &__left{
+              width: 48%;
+              margin-right: 2%;
+            }
+
+            &__right{
+              width: 48%;
+              margin-left: 2%;
+            }
+          }
+        }
       }
     }
   }
@@ -29,7 +73,7 @@
 }
 
 
-/* service min-width: 767px start */
+/* service max-width: 767px start */
 @media screen and (max-width: 767px){
   .product-show{
   
@@ -42,6 +86,12 @@
         }
         &__body{
 
+          &__box{
+
+            &__left , &__right{
+              margin-bottom: 2rem;
+            }
+          }
         }
       }
     }
@@ -63,6 +113,16 @@
         }
         &__body{
 
+          &__box{
+
+            &__left{
+  
+            }
+  
+            &__right{
+              
+            }
+          }
         }
       }
     }
