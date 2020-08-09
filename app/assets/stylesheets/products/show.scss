@@ -10,16 +10,96 @@
       }
 
       &__body{
-        margin: 0 auto;
+        @include container-body-padding-max();
 
         &__box{
 
           &__left{
 
+            &__main-image{
+              width: 100%;
+
+              &__one{
+                padding-top: 100%;
+                position: relative;
+                overflow: hidden;
+
+                img{
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                }
+              }
+            }
+
+            &__sub-image{
+              
+              &__ul{
+                display: flex;
+                margin-top: 1rem;
+
+                &__item{
+                  width: 20%;
+                  position: relative;
+                  overflow: hidden;
+                  // border-color: $gray;
+                  border: 2px solid $gray;
+
+                  img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                  }
+                }
+              }
+            }
           }
 
           &__right{
             
+            &__price{
+              margin-bottom: 1rem;
+              font-size: 1.2rem;
+            }
+
+            &__form{
+              padding-top: 2rem;
+
+              &__category{
+                display: flex;
+  
+                &__size, &__sex{
+
+                  .select-box{
+                    width: 100%;
+                    height: 40px;
+                    border: 1px solid $gray;
+                    border-radius: 0.4rem;
+                  }
+                }
+              }
+
+              &__comment{
+
+                .comment-area{
+                  padding: 0 1em;
+                  height: 108px;
+                  border: 1px solid $gray;
+                  border-radius: 0.4rem;
+                  width: 100%;
+                }
+              }
+
+              .buy-button{
+                margin-top: 2rem;
+                background-color: $dark-red;
+                @include button();
+              }
+            }
           }
         }
       }
@@ -27,17 +107,14 @@
   }
 }
 
-/* service min-width: 1024px start */
-@media screen and (min-width:1024px) {
+/* service min-width: 768px start */
+@media screen and (min-width:768px) {
   .product-show{
   
     &__container{
   
       &__content {
 
-        &__title{
-
-        }
         &__body{
 
           &__box{
@@ -45,13 +122,51 @@
             flex-wrap: wrap;
 
             &__left{
-              width: 48%;
-              margin-right: 2%;
+              width: 45%;
+              margin-right: 5%;
+
+              &__sub-image{
+              
+                &__ul{
+  
+                  &__item{
+                    margin: 0 2px;
+                  }
+
+                  &__item:first-child{
+                    margin-left: 0rem;
+                  }
+
+                  &__item:last-child{
+                    margin-right: 0rem;
+                  }
+                }
+              }
             }
 
             &__right{
               width: 48%;
               margin-left: 2%;
+
+              &__form{
+
+                &__category{
+
+                  &__sex{
+                    width: 48%;
+                    margin-right: auto;
+                  }
+
+                  &__size{
+                    width: 48%;
+                    margin-left: auto;
+                  }
+                }
+
+                &__comment{
+                  margin-top: 2rem;
+                }
+              }
             }
           }
         }
@@ -67,6 +182,19 @@
   
       &__content{
         @include container-padding-max1023px();
+
+        &__body{
+  
+          &__box{
+
+            &__right{
+
+              &__text{
+                font-size: 0.8rem;
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -81,15 +209,27 @@
   
       &__content {
 
-        &__title{
-
-        }
         &__body{
 
           &__box{
 
             &__left , &__right{
               margin-bottom: 2rem;
+
+              &__price{
+                margin-bottom: 0.8rem;
+              }
+
+              &__form{
+  
+                &__category{
+                  display: block;
+
+                  &__size, &__sex{
+                    margin-bottom: 1rem;
+                  }
+                }
+              }
             }
           }
         }
@@ -112,17 +252,7 @@
           @include title-max639px();
         }
         &__body{
-
-          &__box{
-
-            &__left{
-  
-            }
-  
-            &__right{
-              
-            }
-          }
+          @include container-body-padding-max639px();
         }
       }
     }
