@@ -153,8 +153,10 @@
 |![トップページmax](https://user-images.githubusercontent.com/54468465/88477506-86efa200-cf7b-11ea-85f3-b4cf5593b7c4.png)|![トップページmin](https://user-images.githubusercontent.com/54468465/88477510-8eaf4680-cf7b-11ea-87eb-72f077193e8c.png)|
 |料金・サイズ一覧|
 |![料金サイズ一覧max](https://user-images.githubusercontent.com/54468465/88477512-8fe07380-cf7b-11ea-9f51-969aff1ed119.png)|![料金サイズ一覧min](https://user-images.githubusercontent.com/54468465/88477514-90790a00-cf7b-11ea-9f49-af9a363370b3.png)|
-|お問い合わせ|
+|商品一覧|
 |![商品一覧max](https://user-images.githubusercontent.com/54468465/89701716-788a8880-d974-11ea-99c0-cb8059b6a8f1.png)|![商品一覧min](https://user-images.githubusercontent.com/54468465/89701719-7de7d300-d974-11ea-8da2-839f98fdee3c.png)|
+|商品詳細|
+|![商品詳細ページmax](https://user-images.githubusercontent.com/54468465/89732730-b8905f00-da8b-11ea-9ea5-e85e64594361.png)|![商品詳細ページmin](https://user-images.githubusercontent.com/54468465/89732738-c219c700-da8b-11ea-8415-736d511b9677.png)|
 |お問い合わせ|
 |![お問い合わせmax](https://user-images.githubusercontent.com/54468465/88474522-4899b900-cf62-11ea-8270-61c16e78c612.png)|![お問い合わせmin](https://user-images.githubusercontent.com/54468465/88474547-8860a080-cf62-11ea-9f1d-57540857ec35.png)|
 |管理者ページ|
