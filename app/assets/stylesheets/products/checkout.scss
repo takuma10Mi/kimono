@@ -1,0 +1,17 @@
+.checkout{
+
+  &__container{
+
+    &__content {
+      @include container-padding-max();
+
+      &__title{
+        @include title-max();
+      }
+
+      &__body{
+        @include container-body-padding-max();
+      }
+    }
+  }
+}
