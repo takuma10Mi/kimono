@@ -85,6 +85,12 @@
                   -webkit-transform: rotate(45deg);
                   transform: rotate(45deg);
                 }
+                
+                &__btn:hover , &__btn:hover::after{
+                  color: #fff;
+                  border-color: #fff;
+                  background-color: $dark-purple;
+                }
               }
             }
           }

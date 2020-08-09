@@ -1,1 +1,42 @@
-商品詳細ページ
+.product-show
+  .product-show__container
+    .product-show__container__content
+      .product-show__container__content__title
+        %span 商品詳細ページ
+      .product-show__container__content__body
+        .product-show__container__content__body__box
+          .product-show__container__content__body__box__left
+            .product-show__container__content__body__box__left__main-image
+              .product-show__container__content__body__box__left__main-image__one
+                = image_tag "product-img.jpg"
+            .product-show__container__content__body__box__left__sub-image
+              %ul.product-show__container__content__body__box__left__sub-image__ul
+                %li.product-show__container__content__body__box__left__sub-image__ul__item
+                  = image_tag "product-img.jpg"
+                %li.product-show__container__content__body__box__left__sub-image__ul__item
+                  = image_tag "product-img.jpg"
+                %li.product-show__container__content__body__box__left__sub-image__ul__item
+                  = image_tag "product-img.jpg"
+                %li.product-show__container__content__body__box__left__sub-image__ul__item
+                  = image_tag "product-img.jpg"
+                %li.product-show__container__content__body__box__left__sub-image__ul__item
+                  = image_tag "product-img.jpg"
+          .product-show__container__content__body__box__right
+            %h2.product-show__container__content__body__box__right__name
+              テーラード・ジャケット
+            %p.product-show__container__content__body__box__right__price
+              25,000円
+            %p.product-show__container__content__body__box__right__text
+              ハイゴージ、ハイシェイプなどクラシックなフォルムでありながら従来より低めに設定された釦位置により深めのVゾーンを強調し、フロントのカッタウェイラインがエレガントさを表現しています。クラシックの部分とセクシーさを融合したモデルです。
+            .product-show__container__content__body__box__right__form
+              .product-show__container__content__body__box__right__form__category
+                .product-show__container__content__body__box__right__form__category__sex
+                  %label.label-text 性別
+                  %select.select-box{prompt: "--"}
+                .product-show__container__content__body__box__right__form__category__size
+                  %label.label-text サイズ
+                  %select.select-box{prompt: "--"}
+              .product-show__container__content__body__box__right__form__comment
+                %label.label-text コメント欄
+                %textarea{class:"comment-area" , placeholder:"例）着丈は〇〇cm、バストは〇〇cm、袖丈は〇〇cm、肩幅は〇〇cmでお願いします。"}
+              %input{type:"button" , class:"buy-button" , value:"購入する"}

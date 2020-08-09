@@ -124,6 +124,45 @@
 /*レスポンシブデザイン*/
 
 
+/* service min-width: 1024px start */
+@media screen and (min-width:1024px) {
+  .service{
+  
+    &__container{
+
+      &__price , &__size{
+
+        &__body{
+          
+          &__reference{
+            
+            &__box{
+              display: flex;
+              flex-wrap: wrap;
+
+              &__left{
+                width: 48%;
+                margin-right: 2%;
+              }
+
+              &__right{
+                width: 48%;
+                margin-left: 2%;
+
+                &__payment{
+                  max-width: 30rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* service min-width: 1024px end */
+
+
 /* service max-width: 1023px start */
 @media screen and (max-width:1023px) {
   .service{
@@ -166,43 +205,18 @@
 /* service max-width: 1023px end */
 
 
-/* service min-width: 1024px start */
-@media screen and (min-width:1024px) {
+/* service min-width: 767px start */
+@media screen and (max-width: 767px){
   .service{
-  
-    &__container{
 
-      &__price , &__size{
-
-        &__body{
-          
-          &__reference{
-            
-            &__box{
-              display: flex;
-              flex-wrap: wrap;
-
-              &__left{
-                width: 48%;
-                margin-right: 2%;
-              }
-
-              &__right{
-                width: 48%;
-                margin-left: 2%;
-
-                &__payment{
-                  max-width: 30rem;
-                }
-              }
-            }
-          }
-        }
-      }
+    .tab_area label{
+      width: 1.8rem;
+      padding: 3px 0;
+      margin: 0;
     }
   }
 }
-/* service min-width: 1024px end */
+/* service min-width: 767px end */
 
 
 /* service min-width: 639px start */
@@ -224,18 +238,5 @@
 }
 /* service min-width: 639px end */
 
-
-/* service min-width: 767px start */
-@media screen and (max-width: 767px){
-  .service{
-
-    .tab_area label{
-      width: 1.8rem;
-      padding: 3px 0;
-      margin: 0;
-    }
-  }
-}
-/* service min-width: 767px end */
 
 /*レスポンシブデザインend*/
