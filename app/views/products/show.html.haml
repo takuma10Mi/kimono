@@ -31,12 +31,15 @@
             .product-show__container__content__body__box__right__form
               .product-show__container__content__body__box__right__form__category
                 .product-show__container__content__body__box__right__form__category__sex
+                  %span.Form__Item__Label__Required 必須
                   %label.label-text 性別
                   %select.select-box{prompt: "--"}
                 .product-show__container__content__body__box__right__form__category__size
+                  %span.Form__Item__Label__Required 必須
                   %label.label-text サイズ
                   %select.select-box{prompt: "--"}
               .product-show__container__content__body__box__right__form__comment
+                %span.Form__Item__Label__Any 任意
                 %label.label-text コメント欄
                 %textarea{class:"comment-area" , placeholder:"例）着丈は〇〇cm、バストは〇〇cm、袖丈は〇〇cm、肩幅は〇〇cmでお願いします。"}
               %input{type:"button" , class:"buy-button" , value:"購入する"}
