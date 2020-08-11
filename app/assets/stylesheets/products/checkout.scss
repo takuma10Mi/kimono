@@ -51,6 +51,10 @@
             }
           }
 
+          &__center{
+            border: solid 1px #ddd;
+          }
+
           &__right{
             width: 48%;
             margin-left: auto;
@@ -120,12 +124,6 @@
   }
 }
 
-@media screen and (min-width: 1024px){
-  .checkout__container__content__body__box__center{
-    border: solid 1px #ddd;
-  }
-}
-
 @media screen and (max-width: 1023px){
   .checkout{
   
@@ -137,10 +135,14 @@
         &__body{
   
           &__box{
-            display: block;
+            flex-direction: column-reverse;
 
             &__left{
               width: 100%;
+            }
+
+            &__center{
+              margin: 2rem 0;
             }
 
             &__right{
@@ -166,6 +168,29 @@
         }
         &__body{
           @include container-body-padding-max639px();
+
+          &__box{
+          
+            &__right{
+            
+              &__list{
+                display: block;
+
+                &__image{
+                  width: 100%;
+                  height: auto;
+                }
+
+                &__info{
+                  padding: 1rem 0 0 0;
+                }
+
+                &__price::before{
+                  content: "価格：";
+                }
+              }
+            }
+          }
         }
       }
     }
