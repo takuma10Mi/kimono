@@ -4,3 +4,47 @@
       .checkout__container__content__title
         %span 商品購入ページ
       .checkout__container__content__body
+        .checkout__container__content__body__box
+          .checkout__container__content__body__box__left
+            .checkout__container__content__body__box__left__contact
+              %p.Form__Item__Label
+                %span.Form__Item__Label__Required 必須
+                連絡先情報
+              %input{type:"text" , class:"select-box" , placeholder:"メールアドレス"}
+              %input{type:"text" , class:"select-box" , placeholder:"電話番号"}
+            .checkout__container__content__body__box__left__claim
+              %p.Form__Item__Label
+                %span.Form__Item__Label__Required 必須
+                請求先情報
+              %input{type:"text" , class:"select-box" , placeholder:"姓名"}
+              .checkout__container__content__body__box__left__claim__post
+                %span{ style: "margin-left: 0;" } 〒
+                %input{type:"text" , class:"select-box" , placeholder:"000"}
+                %span ー
+                %input{type:"text" , class:"select-box" , placeholder:"0000"}
+              %select.select-box{prompt: "--"}
+              %input{type:"text" , class:"select-box" , placeholder:"市区名"}
+              %input{type:"text" , class:"select-box" , placeholder:"町村名、番地"}
+              %input{type:"text" , class:"select-box" , placeholder:"建物名、部屋番号など（任意）"}
+            %button.buy-button{type:"submit" , id:"buy_button"} お支払いへ進む
+          .checkout__container__content__body__box__center
+          %aside.checkout__container__content__body__box__right
+            .checkout__container__content__body__box__right__list
+              .checkout__container__content__body__box__right__list__image
+                = image_tag "product-img.jpg"
+              .checkout__container__content__body__box__right__list__info
+                %p.checkout__container__content__body__box__right__list__info__title
+                  テーラード・ジャケット
+                %p.checkout__container__content__body__box__right__list__info__sex
+                  性別：男性
+                %p.checkout__container__content__body__box__right__list__info__size
+                  サイズ：L
+              %p.checkout__container__content__body__box__right__list__price
+                25,000円
+            .checkout__container__content__body__box__right__discount
+              %input{type:"text" , class:"select-box" , placeholder:"Gift Cord"}
+              %button.discount-button{type:"button" , id:"discount_button"} 適用する
+            .checkout__container__content__body__box__right__total
+              %p 合計
+              %p.checkout__container__content__body__box__right__total__price
+                25,000円
