@@ -1,1 +1,45 @@
-購入完了ページ
+.done
+  .done__container
+    .done__container__content
+      .done__container__content__title
+        %span 購入完了ページ
+      .done__container__content__body
+        %p.done__container__content__body__thanks
+          ご購入ありがとうございます。
+        .done__container__content__body__box
+          .done__container__content__body__box__list
+            .done__container__content__body__box__list__image
+              = image_tag "product-img.jpg"
+            .done__container__content__body__box__list__info
+              %p.done__container__content__body__box__list__info__title
+                テーラード・ジャケット
+              %p.done__container__content__body__box__list__info__sex
+                男性
+              %p.done__container__content__body__box__list__info__size
+                L
+            %p.done__container__content__body__box__list__price
+              25,000円
+          %p.done__container__content__body__box__comment
+            着丈は〇〇cm、バストは〇〇cm、袖丈は〇〇cm、肩幅は〇〇cmでお願いします。
+          .done__container__content__body__box__total
+            %p お支払い金額の合計
+            %p.done__container__content__body__box__total__price
+              25,000円
+          %p.done__container__content__body__box__attention
+            既製品をご購入の場合はこのまま商品到着までお待ちください。
+            %br
+            着物をリメイクされる場合は下記まで発送の程、よろしくお願いいたします。
+            %br
+            送料はお手数ですが、元払い発送でご協力願います。
+          .done__container__content__body__box__address
+            %p.done__container__content__body__box__address__title
+              発送先
+            %p.done__container__content__body__box__address__detail
+              〒 578-0936
+              %br
+              大阪府東大阪市花園西町1-14-11
+              %br
+              岩内 美八重 宛
+              %br
+              までよろしくお願いいたします。
+          = link_to 'トップページに戻る' , root_path , class: "top-button"

@@ -3,15 +3,17 @@ Rails.application.routes.draw do
   # トップページ
   root to: 'homes#home'
 
-  # 料金一覧 よくある質問 お問い合わせ
+  # 料金一覧
   get 'homes/service', to: 'homes#service'
+  # お問い合わせ
   get 'homes/contact', to: 'homes#contact'
 
   # 商品一覧
   resources :products do
-    # 商品購入ページ 購入完了ページ
+    # 商品購入ページ
     get 'checkout'
-    post 'done'
+    # 購入完了ページ
+    get 'done'
   end
 
   # 管理者ページ
