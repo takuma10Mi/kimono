@@ -63,62 +63,81 @@
               display: none;
             }
 
-            &__list{
-              display: flex;
-              align-items: center;
+            &__overview{
 
-              &__image{
-                width: 5rem;
-                height: 5rem;
+              &__list{
+                display: flex;
+                align-items: center;
 
-                img{
-                  width: 100%;
-                  height: 100%;
-                  object-fit: cover;
+                &__image{
+                  width: 5rem;
+                  height: 5rem;
+
+                  img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                  }
+                }
+
+                &__info{
+                  padding-left: 1rem;
+
+                  &__sex::before{
+                    content: "性別：";
+                  }
+
+                  &__size::before{
+                    content: "サイズ：";
+                  }
+                }
+
+                &__price{
+                  margin-left: auto;
                 }
               }
 
-              &__info{
-                padding-left: 1rem;
+              &__comment{
+                padding-top: 1.5rem;
+              }
+              
+              &__comment::before{
+                content: "コメント：";
               }
 
-              &__price{
-                margin-left: auto;
+              &__discount{
+                display: flex;
+                margin: 2rem 0;
+                padding: 1.5rem 0;
+                border-top: solid 1px #ddd;
+                border-bottom: solid 1px #ddd;
+
+                .select-box{
+                  @include select-box();
+                  margin-top: 0;
+                  width: 65%;
+                }
+
+                .discount-button{
+                  @include button();
+                  background-color: $gray;
+                  width: 30%;
+                  padding: 0;
+                  margin-left: auto;
+                  height: 40px;
+                }
               }
-            }
 
-            &__discount{
-              display: flex;
-              margin: 2rem 0;
-              padding: 1.5rem 0;
-              border-top: solid 1px #ddd;
-              border-bottom: solid 1px #ddd;
+              &__total{
+                display: flex;
+                align-items: center;
+                padding: 1.5rem 0;
 
-              .select-box{
-                @include select-box();
-                margin-top: 0;
-                width: 65%;
-              }
-
-              .discount-button{
-                @include button();
-                background-color: $gray;
-                width: 30%;
-                padding: 0;
-                margin-left: auto;
-                height: 40px;
-              }
-            }
-
-            &__total{
-              display: flex;
-              align-items: center;
-              padding: 1.5rem 0;
-
-              &__price{
-                margin-left: auto;
-                color: black;
-                font-size: 24px;
+                &__price{
+                  margin-left: auto;
+                  color: black;
+                  font-size: 24px;
+                }
               }
             }
           }
@@ -129,6 +148,20 @@
 }
 
 @media screen and (max-width: 1023px){
+
+  // ↓display:none; だと、transitionが効かないのでkeyframesを入れる
+  @keyframes tooltipShow {
+    from {
+      opacity: 0;
+      transform: translateY(5px);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
   .checkout{
   
     &__container {
@@ -153,20 +186,56 @@
               width: 100%;
               border: 1rem;
 
+              &__response:active{
+                border-radius: 0.6rem 0.6rem 0 0;
+              }
+
               &__response{
                 @include button();
                 background-color: #fafafa;
                 border: 1px solid #e6e6e6;
                 display: flex;
+                box-shadow: 0 0 0 0;
                 
                 &__text{
                   color: $midlle-blue;
+                }
+
+                &__text:after{
+                  transition: -webkit-transform .3s;
+                  transition: transform .3s;
+                  transition: transform .3s, -webkit-transform .3s;
+                  -webkit-transform: rotate(180deg);
+                  transform: rotate(180deg);
+                  display: inline-block;
+                  width: 18px;
+                  height: 18px;
+                  content: "\f077";
+                  font-family: FontAwesome;
+                }
+
+                &__text.hidden:after{
+                  -webkit-transform: rotate(0deg);
+                  transform: rotate(0deg);
                 }
 
                 &__price{
                   color: black;
                   margin-left: auto;
                 }
+              }
+
+              &__overview{
+                border: 10px solid #fafafa;
+                padding: 10px;
+                border-radius: 0.6rem;
+                display: none;
+              }
+
+              &__overview.hidden{
+                display: block;
+                // ↓keyframesと連動している
+                animation: tooltipShow 0.3s linear 0s;
               }
             }
           }
@@ -182,7 +251,7 @@
     &__container{
   
       &__content {
-        @include container-padding-max639px();
+        padding: 0 0 1rem 0;
 
         &__title{
           @include title-max639px();
@@ -193,21 +262,23 @@
           &__box{
           
             &__right{
-            
-              &__list{
-                display: block;
 
-                &__image{
-                  width: 100%;
-                  height: auto;
-                }
+              &__overview{
+                &__list{
+                  display: block;
 
-                &__info{
-                  padding: 1rem 0 0 0;
-                }
+                  &__image{
+                    width: 100%;
+                    height: auto;
+                  }
 
-                &__price::before{
-                  content: "価格：";
+                  &__info{
+                    padding: 1rem 0 0 0;
+                  }
+
+                  &__price::before{
+                    content: "価格：";
+                  }
                 }
               }
             }
