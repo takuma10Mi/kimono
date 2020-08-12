@@ -157,6 +157,10 @@
 |![商品一覧max](https://user-images.githubusercontent.com/54468465/89701716-788a8880-d974-11ea-99c0-cb8059b6a8f1.png)|![商品一覧min](https://user-images.githubusercontent.com/54468465/89701719-7de7d300-d974-11ea-8da2-839f98fdee3c.png)|
 |商品詳細|
 |![商品詳細ページmax](https://user-images.githubusercontent.com/54468465/89732730-b8905f00-da8b-11ea-9ea5-e85e64594361.png)|![商品詳細ページmin](https://user-images.githubusercontent.com/54468465/89732738-c219c700-da8b-11ea-8415-736d511b9677.png)|
+|商品購入|
+|![商品購入ページmax](https://user-images.githubusercontent.com/54468465/89985077-6894e080-dcb5-11ea-8e66-f9feaffda068.png)|![商品購入ページmin](https://user-images.githubusercontent.com/54468465/89985103-75b1cf80-dcb5-11ea-84f5-b89009854faa.png)|
+|購入完了|
+|![購入完了ページmax](https://user-images.githubusercontent.com/54468465/89985121-7c404700-dcb5-11ea-8cbb-da0f99790d85.png)|![購入完了ページmin](https://user-images.githubusercontent.com/54468465/89985133-819d9180-dcb5-11ea-88a4-3461f0c5360e.png)|
 |お問い合わせ|
 |![お問い合わせmax](https://user-images.githubusercontent.com/54468465/88474522-4899b900-cf62-11ea-8270-61c16e78c612.png)|![お問い合わせmin](https://user-images.githubusercontent.com/54468465/88474547-8860a080-cf62-11ea-9f1d-57540857ec35.png)|
 |管理者ページ|

@@ -1,0 +1,166 @@
+.done{
+
+  &__container{
+
+    &__content {
+      @include container-padding-max();
+
+      &__title{
+        @include title-max();
+      }
+
+      &__body{
+        @include container-body-padding-max();
+
+        &__thanks{
+          text-align: center;
+          padding-bottom: 3rem;
+          font-size: 1.5rem;
+        }
+
+        &__box{
+          width: 100%;
+
+          &__list{
+            display: flex;
+            align-items: center;
+
+            &__image{
+              width: 5rem;
+              height: 5rem;
+
+              img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+
+            &__info{
+              padding-left: 1rem;
+
+              &__sex::before{
+                content: "性別：";
+              }
+
+              &__size::before{
+                content: "サイズ：";
+              }
+            }
+
+            &__price{
+              margin-left: auto;
+            }
+          }
+
+          &__comment{
+            padding-top: 1.5rem;
+          }
+          
+          &__comment::before{
+            content: "コメント：";
+          }
+
+          &__total{
+            display: flex;
+            align-items: center;
+            padding: 1.5rem 0;
+
+            &__price{
+              margin-left: auto;
+              color: black;
+              font-size: 24px;
+            }
+          }
+
+          &__attention{
+            text-align: center;
+          }
+
+          &__address{
+            text-align: center;
+            padding: 3rem 0;
+            
+
+            &__title{
+              font-size: 1.5rem;
+            }
+
+            &__detail{
+              padding: 1rem 0;
+            }
+          }
+
+          .top-button{
+            background-color: $dark-blue;
+            @include button();
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px){
+  .done{
+  
+    &__container {
+  
+      &__content{
+        @include container-padding-max1023px();
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 639px){
+  .done{
+  
+    &__container{
+  
+      &__content {
+        @include container-padding-max639px();
+
+        &__title{
+          @include title-max639px();
+        }
+        &__body{
+          @include container-body-padding-max639px();
+
+          &__thanks{
+            font-size: 1rem;
+            padding-bottom: 1rem;
+          }
+
+          &__box{
+
+            &__list{
+              display: block;
+
+              &__image{
+                width: 100%;
+                height: auto;
+              }
+
+              &__info{
+                padding: 1rem 0 0 0;
+              }
+
+              &__price::before{
+                content: "価格：";
+              }
+            }
+
+            &__address{
+              padding: 1rem 0;
+  
+              &__title{
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
