@@ -59,6 +59,10 @@
             width: 48%;
             margin-left: auto;
 
+            &__response{
+              display: none;
+            }
+
             &__list{
               display: flex;
               align-items: center;
@@ -147,6 +151,23 @@
 
             &__right{
               width: 100%;
+              border: 1rem;
+
+              &__response{
+                @include button();
+                background-color: #fafafa;
+                border: 1px solid #e6e6e6;
+                display: flex;
+                
+                &__text{
+                  color: $midlle-blue;
+                }
+
+                &__price{
+                  color: black;
+                  margin-left: auto;
+                }
+              }
             }
           }
         }
