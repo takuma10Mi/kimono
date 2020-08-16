@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: kimono_production
-  username: kimono
+  username: root
   password: <%= ENV['KIMONO_DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
