@@ -10,10 +10,10 @@ Rails.application.routes.draw do
 
   # 商品一覧
   resources :products do
-    resources :purchase, only: [:index] do
+    resources :purchases, only: [:index] do
       collection do
-        post "pay", to: "purchase#pay"
-        get "done", to: "purchase#done"
+        post "pay", to: "purchases#pay"
+        get "done", to: "purchases#done"
       end
     end
   end
