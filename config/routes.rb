@@ -10,10 +10,12 @@ Rails.application.routes.draw do
 
   # 商品一覧
   resources :products do
-    # 商品購入ページ
-    get 'checkout'
-    # 購入完了ページ
-    get 'done'
+    resources :purchase, only: [:index] do
+      collection do
+        post "pay", to: "purchase#pay"
+        get "done", to: "purchase#done"
+      end
+    end
   end
 
   # 管理者ページ
