@@ -43,7 +43,11 @@
   display: inline-block;
   width: 2em;
   -webkit-transition: transform 0.4s;
-          transition: transform 0.4s;
+  transition: transform 0.4s;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
 }
 /* 答え */
 .cp_qa .cp_actab .cp_actab-content {
@@ -79,10 +83,10 @@
 }
 /* 質問をクリックした時の+の動き */
 .cp_qa .cp_actab input[type=checkbox]:checked + label::after {
-  -webkit-transform: rotateZ(45deg);
-  transform: rotateZ(45deg);
-  -webkit-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotateZ(45deg);
+  -ms-transform: translateY(-50%) rotateZ(45deg);
+  transform: translateY(-50%) rotateZ(45deg);
 }
 
 @media screen and (max-width: 639px){
